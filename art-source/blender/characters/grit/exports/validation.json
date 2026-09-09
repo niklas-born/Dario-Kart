@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "driverOnlyNativeFile": true,
+  "seatAndWheelExcluded": true,
+  "meshes": 36,
+  "triangles": 45690,
+  "bones": 14,
+  "blinkTargets": 1,
+  "blinkAtFrame44Verified": true,
+  "weightsNormalized": true,
+  "closedLidCoversEyeReflection": true,
+  "glbAnimations": 2,
+  "fbxBoundsMaxErrorMeters": 2.086162567138672e-07,
+  "UVsAndSkinningPreserved": true,
+  "unityRendererVerified": false
+}

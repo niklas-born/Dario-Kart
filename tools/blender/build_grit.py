@@ -206,10 +206,17 @@ for s,side in [(-1,'L'),(1,'R')]:
     parts.append(tube('Arm_'+side,[(s*.31,.015,.97),(s*.437,-.06,.845),
                       (s*.465,-.245,.686),(s*.409,-.426,.67),(s*.277,-.595,.742)],
                       [.115,.125,.118,.114,.094]))
-    parts.append(ball('Palm_'+side,(s*.281,-.641,.724),(.126,.105,.118)))
-    parts.append(tube('Thumb_'+side,[(s*.22,-.586,.773),(s*.173,-.651,.789),(s*.176,-.721,.740)],
-                      [.05,.042,.033]))
-    parts.append(ball('Thumb_Tip_'+side,(s*.176,-.721,.740),(.033,.033,.033),segments=24,rings=16))
+    parts.append(ball('Palm_'+side,(s*.294,-.616,.744),(.102,.081,.078)))
+    fingers=[([(.235,-.627,.782),(.237,-.700,.780),(.242,-.736,.749),(.249,-.720,.706)],.040),
+             ([(.302,-.625,.773),(.305,-.704,.766),(.311,-.742,.734),(.314,-.720,.691)],.042),
+             ([(.362,-.611,.751),(.371,-.683,.746),(.369,-.718,.713),(.357,-.699,.678)],.037)]
+    for i,(path,radius) in enumerate(fingers):
+        points=[(s*x,y,z) for x,y,z in path]
+        parts.append(tube('Curled_Finger_'+side+str(i),points,[radius*.94,radius,radius*.96,radius*.83],sides=24,steps=10))
+        parts.append(ball('Finger_Tip_'+side+str(i),points[-1],(radius*.83,)*3,segments=24,rings=16))
+    thumbpath=[(s*.230,-.591,.782),(s*.181,-.648,.800),(s*.170,-.708,.776),(s*.205,-.738,.742)]
+    parts.append(tube('Thumb_'+side,thumbpath,[.048,.045,.040,.031]))
+    parts.append(ball('Thumb_Tip_'+side,thumbpath[-1],(.031,.031,.031),segments=24,rings=16))
     parts.append(ball('Thigh_'+side,(s*.198,-.175,.278),(.172,.267,.15)))
     parts.append(ball('Foot_'+side,(s*.202,-.445,.197),(.142,.225,.105)))
     # Small toe bulges are integrated into the foot, without adding separate dangling digits.
@@ -228,22 +235,6 @@ apply(body,mod)
 mod=body.modifiers.new('Relax anatomical joins','SMOOTH')
 mod.factor,mod.iterations=.65,11
 apply(body,mod)
-
-# Closed driving fists with two softly carved finger divisions and a separate thumb silhouette.
-for s,side in [(-1,'L'),(1,'R')]:
-    for i in range(2):
-        path=[]
-        for j in range(17):
-            t=j/16
-            x=s*(.334-i*.006-.114*t)
-            z=.785-i*.049-.073*t+.007*math.sin(math.pi*t)
-            y=-.641-.105*math.sqrt(max(.01,1-((abs(x)-.281)/.126)**2-((z-.724)/.118)**2))-.001
-            path.append((x,y,z))
-        cut=tube('Finger_crease_cutter',path,[.001+.008*math.sin(math.pi*j/16)**.5 for j in range(17)],steps=2,sides=12)
-        mod=body.modifiers.new('Finger crease','BOOLEAN')
-        mod.operation,mod.solver,mod.object='DIFFERENCE','EXACT',cut
-        apply(body,mod)
-        bpy.data.objects.remove(cut,do_unlink=True)
 
 # Cut an actual curved grin into the face, with a recessed interior.
 WIDTH=.364
@@ -285,11 +276,14 @@ def pointed_tooth(name, x, base, tip, width):
     rings=[(0,width*.47,.023),(.12,width*.50,.027),(.47,width*.34,.024),(.80,width*.13,.013),(1,.001,.001)]
     tv=[]
     for t,rx,ry in rings:
-        z=base+(tip-base)*t
-        center_y=front(x,z)+.028
         for j in range(24):
             a=2*math.pi*j/24
-            tv.append((x+rx*math.cos(a),center_y+ry*math.sin(a),z))
+            vx=x+rx*math.cos(a)
+            gum_curve=bottom if tip>base else top
+            curved_base=base+gum_curve(vx/WIDTH)-gum_curve(x/WIDTH)
+            z=curved_base*(1-t)+tip*t
+            center_y=front(vx,z)+.051
+            tv.append((vx,center_y+ry*math.sin(a),z))
     tf=[]
     for i in range(len(rings)-1):
         for j in range(24):
@@ -311,6 +305,28 @@ for i,x in enumerate([-.31,-.246,-.155,-.054,.054,.155,.246,.31]):
     z=top(u)+.010
     h=(top(u)-bottom(u))*.64
     pointed_tooth('Tooth_Upper_'+str(i),x,z,z-h,.074 if abs(u)<.7 else .047)
+
+# Blend the lip border and rounded smile corners into the skin instead of leaving raised tubes.
+lip_parts=[body,bpy.data.objects['Upper_Lip'],bpy.data.objects['Lower_Lip']]
+for s in (-1,1):
+    x,z=s*.352,1.073
+    lip_parts.append(ball('Smile_Corner',(x,front(x,z)+.002,z),(.028,.025,.028),segments=32,rings=20))
+bpy.ops.object.select_all(action='DESELECT')
+for ob in lip_parts: ob.select_set(True)
+bpy.context.view_layer.objects.active=body
+bpy.ops.object.join()
+mod=body.modifiers.new('Blend lips and cheeks into sculpt','REMESH')
+mod.mode='VOXEL'
+mod.voxel_size=.0042
+mod.use_smooth_shade=True
+apply(body,mod)
+mod=body.modifiers.new('Relax smile border','SMOOTH')
+mod.factor,mod.iterations=.55,4
+apply(body,mod)
+mod=body.modifiers.new('Final sculpt density','DECIMATE')
+mod.ratio=.42
+apply(body,mod)
+for p in body.data.polygons: p.use_smooth=True
 
 # One centered globe and a skin cap; all eye markings follow the sphere surface.
 CX,CY,CZ=0,-.307,1.234
@@ -357,8 +373,19 @@ for name,rx,rz,offset,mat in [('Iris_Rim',.089,.089,.001,irisrim),('Iris_Center'
 
 # A small stylized reflection sits on the visible lower globe and follows the blink occlusion.
 cx,cz=-.023,1.209
-cy=CY-RY*math.sqrt(1-(cx/RX)**2-((cz-CZ)/RZ)**2)-.004
-ball('Eye_Catchlight',(cx,cy,cz),(.010,.0025,.012),white,segments=24,rings=16)
+cv=[]
+for row in range(7):
+    r=max(.0001,row/6)
+    for col in range(32):
+        a=2*math.pi*col/32
+        x,z=cx+.010*r*math.cos(a),cz+.012*r*math.sin(a)
+        y=CY-RY*math.sqrt(1-(x/RX)**2-((z-CZ)/RZ)**2)-.0034
+        cv.append((x,y,z))
+cf=[]
+for row in range(6):
+    for col in range(32):
+        cf.append((row*32+col,row*32+(col+1)%32,(row+1)*32+(col+1)%32,(row+1)*32+col))
+mesh('Eye_Catchlight',cv,cf,white)
 
 # Ivory crescent horns open inwards; these are shorter and fuller than Riff's curled horns.
 for s,side in [(-1,'L'),(1,'R')]:
@@ -368,6 +395,18 @@ for s,side in [(-1,'L'),(1,'R')]:
     m=h.modifiers.new('Horn surface subdivision','SUBSURF')
     m.levels=1
     apply(h,m)
+    m=h.modifiers.new('Smooth continuous ivory horn','REMESH')
+    m.mode='VOXEL'
+    m.voxel_size=.0035
+    m.use_smooth_shade=True
+    apply(h,m)
+    m=h.modifiers.new('Relax horn surface','SMOOTH')
+    m.factor,m.iterations=.6,6
+    apply(h,m)
+    m=h.modifiers.new('Horn sculpt density','DECIMATE')
+    m.ratio=.35
+    apply(h,m)
+    for p in h.data.polygons: p.use_smooth=True
 
 # Five uneven upright crown spikes, with small continuation buds over the rear crown.
 for i,(x,height) in enumerate([(-.14,.13),(-.076,.195),(0,.242),(.080,.189),(.143,.12)]):
@@ -415,7 +454,7 @@ ground.is_shadow_catcher=True
 scene.world.use_nodes=True
 scene.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.85,.9,1,1)
 scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.18
-for name,pos,power,size,color in [('Key',(-3,-4,5),170,3.0,(1,.97,.91)),('Fill',(3,-2,3),60,3,(.91,.96,1)),('Rim',(1,3,4),150,3,(1,.96,.86))]:
+for name,pos,power,size,color in [('Key',(-3,-4,5),215,3.0,(1,.97,.91)),('Fill',(3,-2,3),85,3,(.91,.96,1)),('Rim',(1,3,4),150,3,(1,.96,.86))]:
     data=bpy.data.lights.new('Grit_'+name,'AREA')
     data.energy,data.size,data.shape,data.color=power,size,'DISK',color
     ob=bpy.data.objects.new(data.name,data)
@@ -469,7 +508,8 @@ stats={'revision':args.revision,'meshCount':len(driver.objects),
 print('GRIT_BUILT '+json.dumps(stats),flush=True)
 for view in args.views.split(','):
     if view=='none': continue
-    scene.camera=bpy.data.objects['Grit_Camera_'+view]
+    guide.hide_render=(view!='fit')
+    scene.camera=bpy.data.objects['Grit_Camera_'+('hero' if view=='fit' else view)]
     scene.render.filepath=str(REVIEW/(view+'.png'))
     bpy.ops.render.render(write_still=True)
     print('GRIT_RENDER '+view,flush=True)

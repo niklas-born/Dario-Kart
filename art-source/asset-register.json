@@ -2,6 +2,32 @@
   "schemaVersion": 1,
   "assets": [
     {
+      "id": "dune-hopper",
+      "source": "art-source/blender/karts/dune-hopper/grit-dune-hopper.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender buggy geometry modeled around the accepted independent Grit driver",
+      "reference": "art-source/concepts/racers/round-02/02-grit-v2.png",
+      "driver": "art-source/blender/characters/grit/grit-driver.blend",
+      "builder": "tools/blender/build_dune_hopper.py",
+      "preparation": "tools/blender/finish_dune_hopper.py",
+      "validation": "tools/blender/verify_dune_hopper.py",
+      "runtimeModel": "game/Assets/_DarioKart/Art/Models/Karts/dune-hopper.fbx",
+      "purpose": "Dune Hopper with separate seat, wheel and steering pivots, exposed suspension and engine, fixed spare, and combined Grit preview",
+      "review": "art-source/blender/karts/dune-hopper/README.md"
+    },
+    {
+      "id": "grit-driver",
+      "source": "art-source/blender/characters/grit/grit-driver.blend",
+      "sculpt": "art-source/blender/characters/grit/grit-driver-v06.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender cyclops geometry built and refined against the Grit concept sheets",
+      "reference": "art-source/concepts/racers/round-02/02-grit-v2.png",
+      "builder": "tools/blender/build_grit.py",
+      "preparation": "tools/blender/prepare_grit.py",
+      "purpose": "Second seated driver with a pose rig, blink, and separate seat and steering guides",
+      "review": "art-source/blender/characters/grit/README.md"
+    },
+    {
       "id": "streamliner",
       "source": "art-source/blender/karts/streamliner/riff-streamliner.blend",
       "author": "Dario Kart project",

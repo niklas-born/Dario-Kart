@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "id": "dune-hopper",
+  "source": "art-source/blender/karts/dune-hopper/grit-dune-hopper.blend",
+  "sourceSha256": "4c4ddb01b3a82e101b9ad8361e373a02e1e46f0bef3a703c2380c578c151a35e",
+  "output": "game/Assets/_DarioKart/Art/Models/Karts/dune-hopper.fbx",
+  "outputSha256": "309d60adb3d1f133b81e4032d6ebae7d1ca0c470bd201aa6cf9c044f9a50f15a",
+  "blenderVersion": "5.2.1 LTS",
+  "versionedSource": "art-source/blender/karts/dune-hopper/grit-dune-hopper-v03.blend",
+  "concept": "art-source/concepts/racers/round-02/02-grit-v2.png",
+  "driver": "art-source/blender/characters/grit/grit-driver.blend",
+  "driverSourceSha256": "9e73fd8b8b9d943267dec5a7c75f21a8da131853bd3b9f582408135d2b401cc5",
+  "driverPlacementMeters": [
+    0,
+    0.12,
+    0.58
+  ],
+  "units": "meters",
+  "blenderForward": "-Y",
+  "exportUp": "Y",
+  "nativeKartTriangles": 224734,
+  "exportKartTriangles": 100101,
+  "driverTriangles": 45690,
+  "exportKartMeshCount": 8,
+  "kartBoundsMetersXYZ": [
+    [
+      -1.4990499019622803,
+      1.4990499019622803
+    ],
+    [
+      -1.7292869091033936,
+      1.6482850313186646
+    ],
+    [
+      0.002713024616241455,
+      1.9755083322525024
+    ]
+  ],
+  "wheelPivots": {
+    "FL": {
+      "steer": "Dune_Steer_FL",
+      "spin": "Dune_Spin_FL",
+      "centerMeters": [
+        -1.1799999475479126,
+        -1.1799999475479126,
+        0.5519999861717224
+      ],
+      "radiusMeters": 0.547
+    },
+    "FR": {
+      "steer": "Dune_Steer_FR",
+      "spin": "Dune_Spin_FR",
+      "centerMeters": [
+        1.1799999475479126,
+        -1.1799999475479126,
+        0.5519999861717224
+      ],
+      "radiusMeters": 0.547
+    },
+    "RL": {
+      "steer": "Dune_Steer_RL",
+      "spin": "Dune_Spin_RL",
+      "centerMeters": [
+        -1.1799999475479126,
+        1.0299999713897705,
+        0.5820000171661377
+      ],
+      "radiusMeters": 0.577
+    },
+    "RR": {
+      "steer": "Dune_Steer_RR",
+      "spin": "Dune_Spin_RR",
+      "centerMeters": [
+        1.1799999475479126,
+        1.0299999713897705,
+        0.5820000171661377
+      ],
+      "radiusMeters": 0.577
+    }
+  },
+  "seatRoot": "Dune_Seat_Root",
+  "driverRoot": "Grit_Driver_Rig",
+  "spareRoot": "Dune_Spare_Mount",
+  "steeringWheelRoot": "Dune_Steering_Spin",
+  "sockets": [
+    "Dune_Socket_Driver_Seat",
+    "Dune_Socket_Camera_Target",
+    "Dune_Socket_Item_Spawn",
+    "Dune_Socket_Exhaust_L",
+    "Dune_Socket_Exhaust_R"
+  ],
+  "outputs": {
+    "unityKartFBX": "game/Assets/_DarioKart/Art/Models/Karts/dune-hopper.fbx",
+    "kartGLB": "art-source/blender/karts/dune-hopper/exports/dune-hopper.glb",
+    "combinedGLB": "art-source/blender/karts/dune-hopper/exports/grit-dune-hopper.glb"
+  },
+  "outputHashes": {
+    "unityKartFBX": "309d60adb3d1f133b81e4032d6ebae7d1ca0c470bd201aa6cf9c044f9a50f15a",
+    "kartGLB": "4c14cd776d7aec526db1cba230af5a647e21f7de643f638e15d0993d3151bb82",
+    "combinedGLB": "80fc7d01a994e4e1340b01ad8a2a5ae484c74b81c677306b69594fe8bbf99cda"
+  },
+  "checks": {
+    "frontSteeringDegreesTested": 22,
+    "roadWheelSpinDegreesTested": 35,
+    "steeringWheelDegreesTested": 27.5,
+    "wheelCentersRemainFixed": true,
+    "rearWheelsDoNotSteer": true,
+    "spareRemainsFixed": true,
+    "driverAndSeatMoveIndependently": true,
+    "driverSourceUnchanged": true,
+    "kartMeshesUVmapped": true,
+    "meshValidationPassed": true,
+    "referenceAndStudioExcluded": true,
+    "unityRendererVerified": false,
+    "gameplayPhysicsImplemented": false
+  },
+  "materials": {
+    "Dune Hopper | graphite tubular frame": {
+      "baseColorLinearRGBA": [
+        0.05448027700185776,
+        0.06480326503515244,
+        0.0666259378194809,
+        1.0
+      ],
+      "metallic": 0.6800000071525574,
+      "roughness": 0.36000001430511475,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | recesses and motor": {
+      "baseColorLinearRGBA": [
+        0.012286487966775894,
+        0.01850022003054619,
+        0.01850022003054619,
+        1.0
+      ],
+      "metallic": 0.18000000715255737,
+      "roughness": 0.6000000238418579,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | sunflower enamel": {
+      "baseColorLinearRGBA": [
+        0.9301108717918396,
+        0.4969329833984375,
+        0.005605391692370176,
+        1.0
+      ],
+      "metallic": 0.11999999731779099,
+      "roughness": 0.36000001430511475,
+      "coat": 0.2199999988079071,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | warm skid plate steel": {
+      "baseColorLinearRGBA": [
+        0.3277781009674072,
+        0.3324515223503113,
+        0.2622506618499756,
+        1.0
+      ],
+      "metallic": 0.7200000286102295,
+      "roughness": 0.4000000059604645,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | brushed aluminum": {
+      "baseColorLinearRGBA": [
+        0.3967552185058594,
+        0.4507857859134674,
+        0.43415364623069763,
+        1.0
+      ],
+      "metallic": 0.7799999713897705,
+      "roughness": 0.30000001192092896,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | orange springs and rims": {
+      "baseColorLinearRGBA": [
+        0.7912979125976562,
+        0.10461648553609848,
+        0.002428215928375721,
+        1.0
+      ],
+      "metallic": 0.3199999928474426,
+      "roughness": 0.3199999928474426,
+      "coat": 0.15000000596046448,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | warm headlamp glass": {
+      "baseColorLinearRGBA": [
+        1.0,
+        0.7681511640548706,
+        0.35640013217926025,
+        1.0
+      ],
+      "metallic": 0.11999999731779099,
+      "roughness": 0.2199999988079071,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        0.8069522380828857,
+        0.4677838087081909,
+        1.0
+      ],
+      "emissionStrength": 0.30000001192092896
+    },
+    "Dune Hopper | rear lamp lens": {
+      "baseColorLinearRGBA": [
+        0.7304607629776001,
+        0.04817182570695877,
+        0.0033465358428657055,
+        1.0
+      ],
+      "metallic": 0.15000000596046448,
+      "roughness": 0.23999999463558197,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        0.8468732237815857,
+        0.07421357184648514,
+        0.004776953253895044,
+        1.0
+      ],
+      "emissionStrength": 0.11999999731779099
+    },
+    "Dune Hopper | orange spare strap": {
+      "baseColorLinearRGBA": [
+        0.6938717365264893,
+        0.15292614698410034,
+        0.013702083379030228,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5600000023841858,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | rubber sidewalls": {
+      "baseColorLinearRGBA": [
+        0.021219009533524513,
+        0.024157632142305374,
+        0.024157632142305374,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6899999976158142,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | rubber tread": {
+      "baseColorLinearRGBA": [
+        0.02955683507025242,
+        0.03310476616024971,
+        0.03189603239297867,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6600000262260437,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    "Dune Hopper | charcoal seat padding": {
+      "baseColorLinearRGBA": [
+        0.02955683507025242,
+        0.0423114113509655,
+        0.0423114113509655,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6700000166893005,
+      "coat": 0.0,
+      "emissionLinearRGBA": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    }
+  }
+}

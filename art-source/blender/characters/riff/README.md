@@ -24,7 +24,7 @@ The detailed sculpt remains in [riff-driver-v11.blend](riff-driver-v11.blend). E
 
 ## Concept comparison history
 
-Only Riff has entered 3D production. No other racer is represented by a recolored copy of this model.
+Riff was the first racer to enter 3D production. [Grit](../grit/README.md) now has his own separately modeled driver; the roster is not made from recolored copies of Riff.
 
 | Pass | Parts compared and corrected |
 | --- | --- |

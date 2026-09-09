@@ -1,0 +1,789 @@
+{
+  "id": "brisk-driver",
+  "sourceSculpt": "art-source/blender/characters/brisk/brisk-driver-v01.blend",
+  "sourceSculptSha256": "7dd1ac2c3660401c776add19cd4e0db8f2d33c87933b8cfc4d1afef9135e705f",
+  "optimization": [
+    {
+      "mesh": "Brisk_Skin",
+      "beforeTriangles": 424728,
+      "afterTriangles": 23000,
+      "sampledMaxSurfaceDeviationMeters": 0.0007504637469537556
+    },
+    {
+      "mesh": "Upper_Gum",
+      "beforeTriangles": 2588,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0016076850006356835
+    },
+    {
+      "mesh": "Lower_Gum",
+      "beforeTriangles": 2588,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0018502097809687257
+    },
+    {
+      "mesh": "Tongue",
+      "beforeTriangles": 2160,
+      "afterTriangles": 348,
+      "sampledMaxSurfaceDeviationMeters": 0.0008483556448481977
+    },
+    {
+      "mesh": "Tooth_Upper_0",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005458029918372631
+    },
+    {
+      "mesh": "Tooth_Upper_1",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006552469567395747
+    },
+    {
+      "mesh": "Tooth_Upper_2",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006895638653077185
+    },
+    {
+      "mesh": "Tooth_Upper_3",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006668012356385589
+    },
+    {
+      "mesh": "Tooth_Upper_4",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006546488730236888
+    },
+    {
+      "mesh": "Tooth_Upper_5",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.000691749737598002
+    },
+    {
+      "mesh": "Tooth_Upper_6",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005155781982466578
+    },
+    {
+      "mesh": "Tooth_Upper_7",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.00041642438736744225
+    },
+    {
+      "mesh": "Tooth_Lower_0",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0004951641894876957
+    },
+    {
+      "mesh": "Tooth_Lower_1",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005589760839939117
+    },
+    {
+      "mesh": "Tooth_Lower_2",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006234509055502713
+    },
+    {
+      "mesh": "Tooth_Lower_3",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005835223710164428
+    },
+    {
+      "mesh": "Tooth_Lower_4",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005622656317427754
+    },
+    {
+      "mesh": "Tooth_Lower_5",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0005913059576414526
+    },
+    {
+      "mesh": "Tooth_Lower_6",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0007805204368196428
+    },
+    {
+      "mesh": "Eye_L",
+      "beforeTriangles": 3920,
+      "afterTriangles": 2200,
+      "sampledMaxSurfaceDeviationMeters": 0.00029272082610987127
+    },
+    {
+      "mesh": "Iris_Rim_L",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 4.897524922853336e-05
+    },
+    {
+      "mesh": "Iris_L",
+      "beforeTriangles": 1152,
+      "afterTriangles": 700,
+      "sampledMaxSurfaceDeviationMeters": 4.039506529807113e-05
+    },
+    {
+      "mesh": "Pupil_L",
+      "beforeTriangles": 1152,
+      "afterTriangles": 700,
+      "sampledMaxSurfaceDeviationMeters": 2.0605046302080154e-05
+    },
+    {
+      "mesh": "Eye_Catchlight_L",
+      "beforeTriangles": 1152,
+      "afterTriangles": 159,
+      "sampledMaxSurfaceDeviationMeters": 5.695441359421238e-06
+    },
+    {
+      "mesh": "Eye_R",
+      "beforeTriangles": 3920,
+      "afterTriangles": 2200,
+      "sampledMaxSurfaceDeviationMeters": 0.00029272082610987127
+    },
+    {
+      "mesh": "Iris_Rim_R",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 4.92034487251658e-05
+    },
+    {
+      "mesh": "Iris_R",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 4.0599294152343646e-05
+    },
+    {
+      "mesh": "Pupil_R",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 2.0758066966664046e-05
+    },
+    {
+      "mesh": "Eye_Catchlight_R",
+      "beforeTriangles": 1152,
+      "afterTriangles": 160,
+      "sampledMaxSurfaceDeviationMeters": 5.892443823540816e-06
+    },
+    {
+      "mesh": "Eye_Center",
+      "beforeTriangles": 3920,
+      "afterTriangles": 2200,
+      "sampledMaxSurfaceDeviationMeters": 0.0001512110757175833
+    },
+    {
+      "mesh": "Iris_Rim_Center",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 2.4839697289280593e-05
+    },
+    {
+      "mesh": "Iris_Center",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 1.9687589883687906e-05
+    },
+    {
+      "mesh": "Pupil_Center",
+      "beforeTriangles": 1152,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 1.1314618859614711e-05
+    },
+    {
+      "mesh": "Eye_Catchlight_Center",
+      "beforeTriangles": 1152,
+      "afterTriangles": 159,
+      "sampledMaxSurfaceDeviationMeters": 4.357751549832756e-06
+    },
+    {
+      "mesh": "Eyebrow_L",
+      "beforeTriangles": 1732,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0007371935644187033
+    },
+    {
+      "mesh": "Eyebrow_R",
+      "beforeTriangles": 1732,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0007040506461635232
+    },
+    {
+      "mesh": "Belly_Patch",
+      "beforeTriangles": 9984,
+      "afterTriangles": 1800,
+      "sampledMaxSurfaceDeviationMeters": 0.000320049817673862
+    },
+    {
+      "mesh": "Horn_Crown_Center",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.00021847951575182378
+    },
+    {
+      "mesh": "Horn_Band_Crown_Center_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0010673064971342683
+    },
+    {
+      "mesh": "Horn_Band_Crown_Center_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008005420677363873
+    },
+    {
+      "mesh": "Horn_Band_Crown_Center_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.000830103293992579
+    },
+    {
+      "mesh": "Horn_Crown_Inner_L",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002606901980470866
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_L_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.000825506926048547
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_L_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0007447206298820674
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_L_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008796213078312576
+    },
+    {
+      "mesh": "Horn_Crown_Outer_L",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.00030670533305965364
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_L_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0012046564370393753
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_L_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008696407312527299
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_L_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008560967980884016
+    },
+    {
+      "mesh": "Horn_Side_L",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002528141485527158
+    },
+    {
+      "mesh": "Horn_Band_Side_L_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0009152307757176459
+    },
+    {
+      "mesh": "Horn_Band_Side_L_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0009794373763725162
+    },
+    {
+      "mesh": "Horn_Band_Side_L_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0007422007038258016
+    },
+    {
+      "mesh": "Horn_Crown_Inner_R",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002539276028983295
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_R_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.000825506926048547
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_R_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0007447206298820674
+    },
+    {
+      "mesh": "Horn_Band_Crown_Inner_R_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008796213078312576
+    },
+    {
+      "mesh": "Horn_Crown_Outer_R",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.00033925758907571435
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_R_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0012046564370393753
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_R_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008696407312527299
+    },
+    {
+      "mesh": "Horn_Band_Crown_Outer_R_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0008560967980884016
+    },
+    {
+      "mesh": "Horn_Side_R",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002718389150686562
+    },
+    {
+      "mesh": "Horn_Band_Side_R_0",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0009152307757176459
+    },
+    {
+      "mesh": "Horn_Band_Side_R_1",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0009794373763725162
+    },
+    {
+      "mesh": "Horn_Band_Side_R_2",
+      "beforeTriangles": 768,
+      "afterTriangles": 220,
+      "sampledMaxSurfaceDeviationMeters": 0.0007422007038258016
+    },
+    {
+      "mesh": "Horn_Rear_0",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002436173817841336
+    },
+    {
+      "mesh": "Horn_Rear_1",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.0002230926329502836
+    },
+    {
+      "mesh": "Horn_Rear_2",
+      "beforeTriangles": 14016,
+      "afterTriangles": 1200,
+      "sampledMaxSurfaceDeviationMeters": 0.00019532954320311546
+    },
+    {
+      "mesh": "Scale_Temple_L0",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00035499167279340327
+    },
+    {
+      "mesh": "Scale_Temple_L1",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005121197318658233
+    },
+    {
+      "mesh": "Scale_Temple_L2",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004440019838511944
+    },
+    {
+      "mesh": "Scale_Temple_L3",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00048292605788446963
+    },
+    {
+      "mesh": "Scale_Temple_L4",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003526214277371764
+    },
+    {
+      "mesh": "Scale_Temple_L5",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003814598312601447
+    },
+    {
+      "mesh": "Scale_Temple_L6",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005003861151635647
+    },
+    {
+      "mesh": "Scale_Temple_L7",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004923817468807101
+    },
+    {
+      "mesh": "Scale_Temple_L8",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004406538209877908
+    },
+    {
+      "mesh": "Scale_Temple_L9",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00048292605788446963
+    },
+    {
+      "mesh": "Scale_Temple_L10",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005096472450532019
+    },
+    {
+      "mesh": "Scale_Temple_L11",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003990361583419144
+    },
+    {
+      "mesh": "Scale_Temple_L12",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003678791399579495
+    },
+    {
+      "mesh": "Scale_Temple_L13",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004316359118092805
+    },
+    {
+      "mesh": "Scale_Back_L0",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004632232303265482
+    },
+    {
+      "mesh": "Scale_Back_L1",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005323993973433971
+    },
+    {
+      "mesh": "Scale_Back_L2",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004268464690539986
+    },
+    {
+      "mesh": "Scale_Back_L3",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005323993973433971
+    },
+    {
+      "mesh": "Scale_Back_L4",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004874180885963142
+    },
+    {
+      "mesh": "Scale_Back_L5",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004991499590687454
+    },
+    {
+      "mesh": "Scale_Back_L6",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004949266440235078
+    },
+    {
+      "mesh": "Scale_Back_L7",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.000429146719397977
+    },
+    {
+      "mesh": "Scale_Back_L8",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.000404325284762308
+    },
+    {
+      "mesh": "Scale_Back_L9",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00041617275564931333
+    },
+    {
+      "mesh": "Scale_Back_L10",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00047683482989668846
+    },
+    {
+      "mesh": "Scale_Belly_L0",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    },
+    {
+      "mesh": "Scale_Belly_L1",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    },
+    {
+      "mesh": "Scale_Belly_L2",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    },
+    {
+      "mesh": "Scale_Temple_R0",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00035499167279340327
+    },
+    {
+      "mesh": "Scale_Temple_R1",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005121197318658233
+    },
+    {
+      "mesh": "Scale_Temple_R2",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004440019838511944
+    },
+    {
+      "mesh": "Scale_Temple_R3",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00048292605788446963
+    },
+    {
+      "mesh": "Scale_Temple_R4",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003526214277371764
+    },
+    {
+      "mesh": "Scale_Temple_R5",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003814598312601447
+    },
+    {
+      "mesh": "Scale_Temple_R6",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004869728581979871
+    },
+    {
+      "mesh": "Scale_Temple_R7",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004923817468807101
+    },
+    {
+      "mesh": "Scale_Temple_R8",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004406538209877908
+    },
+    {
+      "mesh": "Scale_Temple_R9",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00048292605788446963
+    },
+    {
+      "mesh": "Scale_Temple_R10",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004264851158950478
+    },
+    {
+      "mesh": "Scale_Temple_R11",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003990361583419144
+    },
+    {
+      "mesh": "Scale_Temple_R12",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003678791399579495
+    },
+    {
+      "mesh": "Scale_Temple_R13",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004316359118092805
+    },
+    {
+      "mesh": "Scale_Back_R0",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004632232303265482
+    },
+    {
+      "mesh": "Scale_Back_R1",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005323993973433971
+    },
+    {
+      "mesh": "Scale_Back_R2",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004268464690539986
+    },
+    {
+      "mesh": "Scale_Back_R3",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0005323993973433971
+    },
+    {
+      "mesh": "Scale_Back_R4",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004874180885963142
+    },
+    {
+      "mesh": "Scale_Back_R5",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004991499590687454
+    },
+    {
+      "mesh": "Scale_Back_R6",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0004949266440235078
+    },
+    {
+      "mesh": "Scale_Back_R7",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.000429146719397977
+    },
+    {
+      "mesh": "Scale_Back_R8",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.000404325284762308
+    },
+    {
+      "mesh": "Scale_Back_R9",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00041617275564931333
+    },
+    {
+      "mesh": "Scale_Back_R10",
+      "beforeTriangles": 720,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.00047683482989668846
+    },
+    {
+      "mesh": "Scale_Belly_R0",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    },
+    {
+      "mesh": "Scale_Belly_R1",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    },
+    {
+      "mesh": "Scale_Belly_R2",
+      "beforeTriangles": 440,
+      "afterTriangles": 120,
+      "sampledMaxSurfaceDeviationMeters": 0.0003195755125489086
+    }
+  ],
+  "checks": {
+    "triangles": 75435,
+    "meshes": 128,
+    "bones": 14,
+    "blinkTargets": 3,
+    "UVmapped": true,
+    "normalizedWeights": true,
+    "maxBoneInfluences": 4,
+    "seatedIdleFrames": [
+      1,
+      120
+    ],
+    "unityRendererVerified": false
+  },
+  "boundsMetersXYZ": [
+    [
+      -0.6694127917289734,
+      0.6694138050079346
+    ],
+    [
+      -0.7805777788162231,
+      0.5592082142829895
+    ],
+    [
+      0.08823558688163757,
+      1.822923183441162
+    ]
+  ],
+  "source": "art-source/blender/characters/brisk/brisk-driver.blend",
+  "sourceSha256": "1d35ef6f7f7d1ebe94dd0be01f1a1fac31477573e0bf723de6bfa4776d0fce2f",
+  "output": "art-source/blender/characters/brisk/exports/brisk-driver.fbx",
+  "outputSha256": "ee68020ee752d03350b90f6da9a92f74261caa6a059a0de756514d2fa8b554da",
+  "glb": "art-source/blender/characters/brisk/exports/brisk-driver.glb",
+  "glbSha256": "74e357c163cae4cf72f9e259a6825346b23f53f6f049a26e34c96c83f2b72629",
+  "blenderVersion": "5.2.1 LTS",
+  "units": "meters",
+  "forward": "-Y",
+  "up": "Z"
+}

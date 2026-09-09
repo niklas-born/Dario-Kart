@@ -1,0 +1,243 @@
+{
+  "id": "grit-driver",
+  "sourceSculpt": "art-source/blender/characters/grit/grit-driver-v06.blend",
+  "sourceSculptSha256": "22ce0cd65fcf46926320fd6a436eba88319c1b1a6867deca3eecda2e057c58d3",
+  "optimization": [
+    {
+      "mesh": "Grit_Skin",
+      "beforeTriangles": 392162,
+      "afterTriangles": 23000,
+      "sampledMaxSurfaceDeviationMeters": 0.0006961934850551188
+    },
+    {
+      "mesh": "Upper_Gum",
+      "beforeTriangles": 2588,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0008629039512015879
+    },
+    {
+      "mesh": "Lower_Gum",
+      "beforeTriangles": 2588,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0010544771794229746
+    },
+    {
+      "mesh": "Tongue",
+      "beforeTriangles": 2976,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.0008711108821444213
+    },
+    {
+      "mesh": "Tooth_Lower_0",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0009006736217997968
+    },
+    {
+      "mesh": "Tooth_Lower_1",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0010480189230293036
+    },
+    {
+      "mesh": "Tooth_Lower_2",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.000961469835601747
+    },
+    {
+      "mesh": "Tooth_Lower_3",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0008602109155617654
+    },
+    {
+      "mesh": "Tooth_Lower_4",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0008448350708931684
+    },
+    {
+      "mesh": "Tooth_Lower_5",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.00069786625681445
+    },
+    {
+      "mesh": "Tooth_Lower_6",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006145201623439789
+    },
+    {
+      "mesh": "Tooth_Upper_0",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0004086651897523552
+    },
+    {
+      "mesh": "Tooth_Upper_1",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0007440142217092216
+    },
+    {
+      "mesh": "Tooth_Upper_2",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.000660622725263238
+    },
+    {
+      "mesh": "Tooth_Upper_3",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0009600214543752372
+    },
+    {
+      "mesh": "Tooth_Upper_4",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.000744617311283946
+    },
+    {
+      "mesh": "Tooth_Upper_5",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0007223202264867723
+    },
+    {
+      "mesh": "Tooth_Upper_6",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.0006090659881010652
+    },
+    {
+      "mesh": "Tooth_Upper_7",
+      "beforeTriangles": 3456,
+      "afterTriangles": 240,
+      "sampledMaxSurfaceDeviationMeters": 0.00035158946411684155
+    },
+    {
+      "mesh": "Eye_Center",
+      "beforeTriangles": 4992,
+      "afterTriangles": 2200,
+      "sampledMaxSurfaceDeviationMeters": 0.0004115780466236174
+    },
+    {
+      "mesh": "Iris_Rim",
+      "beforeTriangles": 2048,
+      "afterTriangles": 700,
+      "sampledMaxSurfaceDeviationMeters": 7.040088530629873e-05
+    },
+    {
+      "mesh": "Iris_Center",
+      "beforeTriangles": 2048,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 5.7087007007794455e-05
+    },
+    {
+      "mesh": "Pupil_Center",
+      "beforeTriangles": 2048,
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 2.241189213236794e-05
+    },
+    {
+      "mesh": "Horn_L",
+      "beforeTriangles": 39502,
+      "afterTriangles": 2600,
+      "sampledMaxSurfaceDeviationMeters": 0.0005797646008431911
+    },
+    {
+      "mesh": "Horn_R",
+      "beforeTriangles": 39496,
+      "afterTriangles": 2600,
+      "sampledMaxSurfaceDeviationMeters": 0.000477596593555063
+    },
+    {
+      "mesh": "Crest_0",
+      "beforeTriangles": 2160,
+      "afterTriangles": 500,
+      "sampledMaxSurfaceDeviationMeters": 0.0006202316144481301
+    },
+    {
+      "mesh": "Crest_1",
+      "beforeTriangles": 2160,
+      "afterTriangles": 500,
+      "sampledMaxSurfaceDeviationMeters": 0.000646193977445364
+    },
+    {
+      "mesh": "Crest_2",
+      "beforeTriangles": 2160,
+      "afterTriangles": 500,
+      "sampledMaxSurfaceDeviationMeters": 0.0006278377259150147
+    },
+    {
+      "mesh": "Crest_3",
+      "beforeTriangles": 2160,
+      "afterTriangles": 500,
+      "sampledMaxSurfaceDeviationMeters": 0.0006258211215026677
+    },
+    {
+      "mesh": "Crest_4",
+      "beforeTriangles": 2160,
+      "afterTriangles": 500,
+      "sampledMaxSurfaceDeviationMeters": 0.0005416023195721209
+    },
+    {
+      "mesh": "Rear_Crest_Bud_0",
+      "beforeTriangles": 720,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.00044563942356035113
+    },
+    {
+      "mesh": "Rear_Crest_Bud_1",
+      "beforeTriangles": 720,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.00048752481234259903
+    },
+    {
+      "mesh": "Rear_Crest_Bud_2",
+      "beforeTriangles": 720,
+      "afterTriangles": 350,
+      "sampledMaxSurfaceDeviationMeters": 0.00038303842302411795
+    }
+  ],
+  "checks": {
+    "triangles": 45690,
+    "meshes": 36,
+    "bones": 14,
+    "blinkTargets": 1,
+    "UVmapped": true,
+    "normalizedWeights": true,
+    "maxBoneInfluences": 4,
+    "seatedIdleFrames": [
+      1,
+      120
+    ],
+    "unityRendererVerified": false
+  },
+  "boundsMetersXYZ": [
+    [
+      -0.6136152148246765,
+      0.613850474357605
+    ],
+    [
+      -0.7802437543869019,
+      0.38531726598739624
+    ],
+    [
+      0.09213834255933762,
+      1.857258677482605
+    ]
+  ],
+  "source": "art-source/blender/characters/grit/grit-driver.blend",
+  "sourceSha256": "9e73fd8b8b9d943267dec5a7c75f21a8da131853bd3b9f582408135d2b401cc5",
+  "output": "art-source/blender/characters/grit/exports/grit-driver.fbx",
+  "outputSha256": "3d57323307f0f331d2e9d8170b8b096b7d3d916e57bc276d19dd7f7b48412217",
+  "glb": "art-source/blender/characters/grit/exports/grit-driver.glb",
+  "glbSha256": "60ff361539a2853fc648bbda4764d183c470e3164e19c5a961d9110b4ab427fe",
+  "blenderVersion": "5.2.1 LTS",
+  "units": "meters",
+  "forward": "-Y",
+  "up": "Z"
+}

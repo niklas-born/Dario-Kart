@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "kartMeshCount": 8,
+  "kartTriangles": 100101,
+  "combinedDriverBones": 14,
+  "combinedBlinkTargets": 1,
+  "animatedBlinkExported": true,
+  "fbxHierarchyPreserved": true,
+  "fbxBoundsAndWheelCentersPreservedWithinMeters": 0.002,
+  "driverAndSeatSeparate": true,
+  "carOnlyExportExcludesDriver": true,
+  "spareSeparateFromRoadWheelPivots": true,
+  "nativeControlChecks": {
+    "frontSteeringDegreesTested": 22,
+    "roadWheelSpinDegreesTested": 35,
+    "steeringWheelDegreesTested": 27.5,
+    "wheelCentersRemainFixed": true,
+    "rearWheelsDoNotSteer": true,
+    "spareRemainsFixed": true,
+    "driverAndSeatMoveIndependently": true,
+    "driverSourceUnchanged": true,
+    "kartMeshesUVmapped": true,
+    "meshValidationPassed": true,
+    "referenceAndStudioExcluded": true,
+    "unityRendererVerified": false,
+    "gameplayPhysicsImplemented": false
+  },
+  "sourceAndOutputHashesMatch": true,
+  "materialsInKartGLB": 12,
+  "studioAndReferenceObjectsExcluded": true,
+  "unityRendererVerified": false
+}
