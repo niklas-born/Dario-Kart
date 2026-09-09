@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "kartMeshCount": 7,
+  "kartTriangles": 58588,
+  "combinedDriverBones": 14,
+  "combinedBlinkTargets": 2,
+  "fbxHierarchyPreserved": true,
+  "fbxBoundsPreservedWithinMeters": 0.002,
+  "seatSeparatelyEditable": true,
+  "materialsInKartGLB": 12,
+  "studioAndReferenceObjectsExcluded": true,
+  "unityRendererVerified": false
+}

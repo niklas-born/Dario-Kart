@@ -1,0 +1,24 @@
+{
+  "source": "art-source/blender/karts/streamliner/riff-streamliner.blend",
+  "sourceSha256": "3df169c5bdeb145da901273862626d3d8429cdf0c0e965c78ff99978d35773a3",
+  "units": "meters",
+  "placement": "Original assembled Blender coordinates retained",
+  "parts": {
+    "driver": {
+      "blend": "art-source/blender/characters/riff/riff-driver-only.blend",
+      "glb": "art-source/blender/characters/riff/exports/riff-driver-only.glb",
+      "root": "Riff_Driver_Rig",
+      "objectCount": 42,
+      "maxPlacementDeviationMeters": 0.0
+    },
+    "seat": {
+      "blend": "art-source/blender/karts/streamliner/streamliner-seat.blend",
+      "glb": "art-source/blender/karts/streamliner/exports/streamliner-seat.glb",
+      "root": "Seat_Root",
+      "objectCount": 3,
+      "maxPlacementDeviationMeters": 0.0
+    }
+  },
+  "driverMovesWithoutSeat": true,
+  "passed": true
+}

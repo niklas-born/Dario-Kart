@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "streamliner",
+  "source": "art-source/blender/karts/streamliner/riff-streamliner.blend",
+  "sourceSha256": "3df169c5bdeb145da901273862626d3d8429cdf0c0e965c78ff99978d35773a3",
+  "output": "game/Assets/_DarioKart/Art/Models/Karts/streamliner.fbx",
+  "outputSha256": "4c20b8eddac11c138132aa9457fd33372600e24f2df1a40fb626848f3cdcc17a",
+  "blenderVersion": "5.2.1 LTS",
+  "versionedSource": "art-source/blender/karts/streamliner/riff-streamliner.blend",
+  "concept": "art-source/concepts/racers/round-02/01-riff-v2.png",
+  "driver": "art-source/blender/characters/riff/riff-driver.blend",
+  "driverPlacementMeters": [
+    0,
+    0.1,
+    0.38
+  ],
+  "units": "meters",
+  "blenderForward": "-Y",
+  "exportUp": "Y",
+  "nativeKartTriangles": 88504,
+  "exportKartTriangles": 58588,
+  "driverTriangles": 52655,
+  "exportKartMeshCount": 7,
+  "kartBoundsMetersXYZ": [
+    [
+      -1.324299931526184,
+      1.324299931526184
+    ],
+    [
+      -2.427503824234009,
+      1.780001163482666
+    ],
+    [
+      -2.831898018484935e-05,
+      1.4978407621383667
+    ]
+  ],
+  "wheelPivots": {
+    "FL": {
+      "steer": "Steer_FL",
+      "spin": "Spin_FL",
+      "radiusMeters": 0.435
+    },
+    "FR": {
+      "steer": "Steer_FR",
+      "spin": "Spin_FR",
+      "radiusMeters": 0.435
+    },
+    "RL": {
+      "steer": "Steer_RL",
+      "spin": "Spin_RL",
+      "radiusMeters": 0.603
+    },
+    "RR": {
+      "steer": "Steer_RR",
+      "spin": "Spin_RR",
+      "radiusMeters": 0.603
+    }
+  },
+  "seatRoot": "Seat_Root",
+  "driverRoot": "Riff_Driver_Rig",
+  "sockets": [
+    "Socket_Driver_Seat",
+    "Socket_Item_Spawn",
+    "Socket_Camera_Target",
+    "Socket_Exhaust_L",
+    "Socket_Exhaust_R"
+  ],
+  "outputs": {
+    "unityKartFBX": "game/Assets/_DarioKart/Art/Models/Karts/streamliner.fbx",
+    "kartGLB": "art-source/blender/karts/streamliner/exports/streamliner.glb",
+    "combinedGLB": "art-source/blender/karts/streamliner/exports/riff-streamliner.glb"
+  },
+  "checks": {
+    "frontSteeringDegreesTested": 22,
+    "wheelSpinDegreesTested": 35,
+    "wheelCentersRemainFixed": true,
+    "kartMeshesUVmapped": true,
+    "meshValidationPassed": true,
+    "referenceAndStudioExcluded": true,
+    "unityRendererVerified": false,
+    "gameplayPhysicsImplemented": false
+  },
+  "materials": {
+    "Streamliner | ivory enamel": {
+      "baseColorLinearRGBA": [
+        0.8549926280975342,
+        0.7605245113372803,
+        0.577580451965332,
+        1.0
+      ],
+      "metallic": 0.11999999731779099,
+      "roughness": 0.30000001192092896,
+      "transmission": 0.0
+    },
+    "Streamliner | petrol teal enamel": {
+      "baseColorLinearRGBA": [
+        0.007499032188206911,
+        0.19806931912899017,
+        0.23839756846427917,
+        1.0
+      ],
+      "metallic": 0.2800000011920929,
+      "roughness": 0.3199999928474426,
+      "transmission": 0.0
+    },
+    "Streamliner | coral stripe": {
+      "baseColorLinearRGBA": [
+        0.8148465752601624,
+        0.18782077729701996,
+        0.1119324266910553,
+        1.0
+      ],
+      "metallic": 0.07999999821186066,
+      "roughness": 0.36000001430511475,
+      "transmission": 0.0
+    },
+    "Streamliner | brushed aluminum": {
+      "baseColorLinearRGBA": [
+        0.46207699179649353,
+        0.4969329833984375,
+        0.5028864741325378,
+        1.0
+      ],
+      "metallic": 0.7799999713897705,
+      "roughness": 0.25999999046325684,
+      "transmission": 0.0
+    },
+    "Streamliner | dark mechanical steel": {
+      "baseColorLinearRGBA": [
+        0.05448027700185776,
+        0.07421357184648514,
+        0.0802198201417923,
+        1.0
+      ],
+      "metallic": 0.6000000238418579,
+      "roughness": 0.3799999952316284,
+      "transmission": 0.0
+    },
+    "Streamliner | intake and cockpit": {
+      "baseColorLinearRGBA": [
+        0.008568125776946545,
+        0.012983032502233982,
+        0.015208514407277107,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6600000262260437,
+      "transmission": 0.0
+    },
+    "Streamliner | warm alloy": {
+      "baseColorLinearRGBA": [
+        0.4969329833984375,
+        0.4125426113605499,
+        0.23074005544185638,
+        1.0
+      ],
+      "metallic": 0.7200000286102295,
+      "roughness": 0.33000001311302185,
+      "transmission": 0.0
+    },
+    "Streamliner | smoked windscreen": {
+      "baseColorLinearRGBA": [
+        0.2345505803823471,
+        0.30054378509521484,
+        0.2961382567882538,
+        1.0
+      ],
+      "metallic": 0.07999999821186066,
+      "roughness": 0.1599999964237213,
+      "transmission": 0.6800000071525574
+    },
+    "Streamliner | tire rubber": {
+      "baseColorLinearRGBA": [
+        0.01850022003054619,
+        0.019382361322641373,
+        0.021219009533524513,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6200000047683716,
+      "transmission": 0.0
+    },
+    "Guide | charcoal cushion": {
+      "baseColorLinearRGBA": [
+        0.03189603239297867,
+        0.0423114113509655,
+        0.045186202973127365,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6399999856948853,
+      "transmission": 0.0
+    },
+    "Guide | leather": {
+      "baseColorLinearRGBA": [
+        0.1384316086769104,
+        0.05612849071621895,
+        0.022173885256052017,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "transmission": 0.0
+    },
+    "Guide | metal": {
+      "baseColorLinearRGBA": [
+        0.28744083642959595,
+        0.37123769521713257,
+        0.38132601976394653,
+        1.0
+      ],
+      "metallic": 0.6499999761581421,
+      "roughness": 0.30000001192092896,
+      "transmission": 0.0
+    }
+  }
+}

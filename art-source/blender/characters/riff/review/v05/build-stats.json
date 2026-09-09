@@ -1,0 +1,6 @@
+{
+  "revision": "05",
+  "meshObjects": 45,
+  "triangles": 185355,
+  "blend": "art-source/blender/characters/riff/riff-driver-v05.blend"
+}

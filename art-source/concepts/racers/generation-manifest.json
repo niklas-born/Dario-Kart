@@ -1,0 +1,158 @@
+{
+  "generator": "Built-in image_gen",
+  "date": "2026-09-08",
+  "currentRound": "round-03",
+  "images": [
+    {
+      "path": "art-source/concepts/racers/round-01/01-riff-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e70366b97fe6d7accd0cbb33c8c195b62b2e0f85cbb7e0856f2a9eb07450894d",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/02-grit-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ce3a12625027bc73c78981fa21781cd306930652f77ee6ea6086d62729a78272",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/03-brisk-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "037400a5cbc6474d1d12f326dcabceb55da660f5d6c3cdd8372167613d9fe761",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/04-momo-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "140c3b6cee7b2b29b1676534abffee9c3fabd35d24af9efe6746227bf47920de",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/05-pip-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "45a07205d2aba56f3262757e48d04f1b0eee2b8722726d4cd29854cb6e1e71ec",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/06-zip-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2954abeeb981dbb1d56a433b39a61497a206eeefe0baeef49683ed55ba2164ea",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/07-orbit-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "076d368d2cb667eb08c880adcf6a7041f9bef7f9b2f09441af4b8fed92be7e46",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-01/08-moss-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ce9a751dab8bf493ab878f6a10d41dfe239ce5df30f5206bf15cb16533b36a91",
+      "status": "superseded-vehicle-design"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/01-riff-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "bde9d9ab437c8fd0f398185d6867cb7967a8c71dee91f1b5052d0d4b09fa24f2",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/02-grit-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9681a01ee6527d1f1d2ede0d594789db3b78ad9b83aed642a2aec86c96f4a949",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/03-brisk-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0be18c2754e9a22aa45f965ce8b530737be054a7f094a12c1c1be220e276ad9f",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/04-momo-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5a90f473bde631b1c3ba2f8d6900fbb86802f14c10f1318a22cc851def0a65bb",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/05-pip-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "85552500936064eb2b5653f787c82241137f6eb8e76f2f3039ba22f3c49e6232",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/06-zip-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ec37a136c6f26d1e8addfa87c46940ab8abcd30d95defc737717d3498241b256",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/07-orbit-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ed33788ab307b3aac1ea54c6f8ad44dc970cb035ad32c5d4b3636dae97215af8",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-02/08-moss-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "22fb6b4c79b5e59817e503dcb0e07941ab6451160c4d9c9d8911f6693e9628dd",
+      "status": "current"
+    },
+    {
+      "path": "art-source/concepts/racers/round-03/09-chomp-v1.png",
+      "width": 768,
+      "height": 512,
+      "sha256": "79338080f4f577efefd06c168b6266dad9aecc14c86bcc216d06927eb41c8e6a",
+      "status": "current",
+      "source": "user-supplied composite crop"
+    },
+    {
+      "path": "art-source/concepts/racers/round-03/10-bop-v1.png",
+      "width": 768,
+      "height": 512,
+      "sha256": "3d687a13e458b1dd1045fe6254cad8731a754b1ce3989cd5129314fc6baddd4c",
+      "status": "current",
+      "source": "user-supplied composite crop"
+    },
+    {
+      "path": "art-source/concepts/racers/round-03/11-spike-v1.png",
+      "width": 768,
+      "height": 512,
+      "sha256": "7c19544b639cc39d353b4a0ea6f13d32db185b52bb10904c91e256d55dfcdc91",
+      "status": "current",
+      "source": "user-supplied composite crop"
+    },
+    {
+      "path": "art-source/concepts/racers/round-03/12-fizz-v1.png",
+      "width": 768,
+      "height": 512,
+      "sha256": "bfcccfd7855cf02f5eae109d326e6c9be61e8ede23782d3a841c7ae5372490e8",
+      "status": "current",
+      "source": "user-supplied composite crop"
+    },
+    {
+      "path": "art-source/references/monsters/remaining-four-composite.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4aafa406bafaf97150025182cc4d70ead4f60dd2bcdbb7486dcf9a5040e932f2",
+      "status": "source-reference"
+    }
+  ]
+}

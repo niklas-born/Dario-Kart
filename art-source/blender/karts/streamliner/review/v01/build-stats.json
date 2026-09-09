@@ -1,0 +1,62 @@
+{
+  "revision": "01",
+  "source": "art-source/blender/karts/streamliner/riff-streamliner-v01.blend",
+  "kartTriangles": 85834,
+  "driverTriangles": 52655,
+  "wheelAssemblies": [
+    {
+      "id": "FL",
+      "center": [
+        -1.0149999856948853,
+        -1.5099999904632568,
+        0.4350000023841858
+      ],
+      "radius": 0.435,
+      "width": 0.275,
+      "steer": "Steer_FL",
+      "spin": "Spin_FL"
+    },
+    {
+      "id": "FR",
+      "center": [
+        1.0149999856948853,
+        -1.5099999904632568,
+        0.4350000023841858
+      ],
+      "radius": 0.435,
+      "width": 0.275,
+      "steer": "Steer_FR",
+      "spin": "Spin_FR"
+    },
+    {
+      "id": "RL",
+      "center": [
+        -1.0549999475479126,
+        0.9100000262260437,
+        0.6029999852180481
+      ],
+      "radius": 0.603,
+      "width": 0.42,
+      "steer": "Steer_RL",
+      "spin": "Spin_RL"
+    },
+    {
+      "id": "RR",
+      "center": [
+        1.0549999475479126,
+        0.9100000262260437,
+        0.6029999852180481
+      ],
+      "radius": 0.603,
+      "width": 0.42,
+      "steer": "Steer_RR",
+      "spin": "Spin_RR"
+    }
+  ],
+  "driverOffset": [
+    0.0,
+    0.10000000149011612,
+    0.3799999952316284
+  ],
+  "units": "meters"
+}

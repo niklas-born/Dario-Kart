@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "sessionId": "assigned-during-pairing",
+  "sequence": 1042,
+  "steer": -0.35,
+  "throttle": 1.0,
+  "brake": 0.0,
+  "driftHeld": true,
+  "itemPressSequence": 3
+}

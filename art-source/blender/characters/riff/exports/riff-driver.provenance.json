@@ -1,0 +1,171 @@
+{
+  "sourceSculpt": "art-source/blender/characters/riff/riff-driver-v10.blend",
+  "optimization": [
+    {
+      "mesh": "Riff_Skin",
+      "before": 136181,
+      "after": 23999,
+      "sampledMaxSurfaceDeviationMeters": 0.000593
+    },
+    {
+      "mesh": "Lower_Lip",
+      "before": 1564,
+      "after": 600,
+      "sampledMaxSurfaceDeviationMeters": 0.000458
+    },
+    {
+      "mesh": "Upper_Lip",
+      "before": 1564,
+      "after": 600,
+      "sampledMaxSurfaceDeviationMeters": 0.00041
+    },
+    {
+      "mesh": "Tongue",
+      "before": 2976,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000509
+    },
+    {
+      "mesh": "Gums_upper",
+      "before": 1556,
+      "after": 600,
+      "sampledMaxSurfaceDeviationMeters": 0.000272
+    },
+    {
+      "mesh": "Gums_lower",
+      "before": 1556,
+      "after": 600,
+      "sampledMaxSurfaceDeviationMeters": 0.000391
+    },
+    {
+      "mesh": "Eye_L",
+      "before": 2976,
+      "after": 1400,
+      "sampledMaxSurfaceDeviationMeters": 0.000372
+    },
+    {
+      "mesh": "Iris_L",
+      "before": 1152,
+      "after": 479,
+      "sampledMaxSurfaceDeviationMeters": 7.5e-05
+    },
+    {
+      "mesh": "Pupil_L",
+      "before": 1152,
+      "after": 480,
+      "sampledMaxSurfaceDeviationMeters": 3.5e-05
+    },
+    {
+      "mesh": "Eyebrow_L",
+      "before": 2208,
+      "after": 650,
+      "sampledMaxSurfaceDeviationMeters": 0.000409
+    },
+    {
+      "mesh": "Eye_R",
+      "before": 2976,
+      "after": 1400,
+      "sampledMaxSurfaceDeviationMeters": 0.000372
+    },
+    {
+      "mesh": "Iris_R",
+      "before": 1152,
+      "after": 479,
+      "sampledMaxSurfaceDeviationMeters": 8.2e-05
+    },
+    {
+      "mesh": "Pupil_R",
+      "before": 1152,
+      "after": 480,
+      "sampledMaxSurfaceDeviationMeters": 3.3e-05
+    },
+    {
+      "mesh": "Eyebrow_R",
+      "before": 2208,
+      "after": 650,
+      "sampledMaxSurfaceDeviationMeters": 0.000409
+    },
+    {
+      "mesh": "Horn_L",
+      "before": 19662,
+      "after": 2600,
+      "sampledMaxSurfaceDeviationMeters": 0.00068
+    },
+    {
+      "mesh": "Horn_R",
+      "before": 19658,
+      "after": 2600,
+      "sampledMaxSurfaceDeviationMeters": 0.000622
+    },
+    {
+      "mesh": "Crown_Tuft_0",
+      "before": 1472,
+      "after": 700,
+      "sampledMaxSurfaceDeviationMeters": 0.000259
+    },
+    {
+      "mesh": "Crown_Tuft_1",
+      "before": 1472,
+      "after": 700,
+      "sampledMaxSurfaceDeviationMeters": 0.000267
+    },
+    {
+      "mesh": "Crown_Tuft_2",
+      "before": 1472,
+      "after": 700,
+      "sampledMaxSurfaceDeviationMeters": 0.000276
+    },
+    {
+      "mesh": "Front_Crest_Bud_0",
+      "before": 720,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000303
+    },
+    {
+      "mesh": "Front_Crest_Bud_1",
+      "before": 720,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000271
+    },
+    {
+      "mesh": "Back_Tuft_0",
+      "before": 720,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000344
+    },
+    {
+      "mesh": "Back_Tuft_1",
+      "before": 720,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000344
+    },
+    {
+      "mesh": "Back_Tuft_2",
+      "before": 720,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 0.000344
+    },
+    {
+      "mesh": "Nose",
+      "before": 796,
+      "after": 400,
+      "sampledMaxSurfaceDeviationMeters": 8.7e-05
+    }
+  ],
+  "checks": {
+    "allMeshesUVmapped": true,
+    "weightsNormalized": true,
+    "maxBoneInfluences": 4,
+    "boneCount": 14,
+    "triangles": 52655,
+    "seatedIdleFrames": [
+      1,
+      120
+    ],
+    "blinkFullyClosedFrame": 44,
+    "runtimeRendererVerified": false
+  },
+  "meshCleanup": [
+    "Riff_Skin"
+  ]
+}
