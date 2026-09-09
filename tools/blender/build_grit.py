@@ -77,7 +77,7 @@ def material(name, color, rough=.45, metal=0, sss=0):
     return mat
 
 
-skin = material('golden yellow skin','FFC900',.48,sss=.035)
+skin = material('golden yellow skin','FFC500',.51,sss=.022)
 hornmat = material('warm ivory horns','F3E3BF',.34,sss=.02)
 white = material('warm eye white','F1E8D0',.32)
 iris = material('amber iris','A56C0A',.28)
@@ -205,7 +205,7 @@ parts=[body]
 for s,side in [(-1,'L'),(1,'R')]:
     parts.append(tube('Arm_'+side,[(s*.31,.015,.97),(s*.437,-.06,.845),
                       (s*.465,-.245,.686),(s*.409,-.426,.67),(s*.277,-.595,.742)],
-                      [.133,.139,.138,.135,.103]))
+                      [.115,.125,.118,.114,.094]))
     parts.append(ball('Palm_'+side,(s*.281,-.641,.724),(.126,.105,.118)))
     parts.append(tube('Thumb_'+side,[(s*.22,-.586,.773),(s*.173,-.651,.789),(s*.176,-.721,.740)],
                       [.05,.042,.033]))
@@ -247,8 +247,8 @@ for s,side in [(-1,'L'),(1,'R')]:
 
 # Cut an actual curved grin into the face, with a recessed interior.
 WIDTH=.364
-def top(u): return 1.005+.100*u*u
-def bottom(u): return .864+.241*u*u
+def top(u): return 1.005+.077*u*u+.017*math.sqrt(max(0,1-u*u))
+def bottom(u): return .895+.187*u*u-.006*math.sqrt(max(0,1-u*u))
 outline=[(WIDTH*(-1+2*i/64),top(-1+2*i/64)) for i in range(65)]
 outline += [(WIDTH*(-1+2*i/64),bottom(-1+2*i/64)) for i in range(63,0,-1)]
 n=len(outline)
@@ -274,10 +274,10 @@ for name,fn in [('Upper_Lip',top),('Lower_Lip',bottom)]:
         u=-.98+1.96*i/40
         x,z=WIDTH*u,fn(u)
         points.append((x,front(x,z)-.005,z))
-    tube(name,points,[.010+.008*(1-abs(-.98+1.96*i/40)) for i in range(41)],steps=2)
+    tube(name,points,[.016+.004*(1-abs(-.98+1.96*i/40)) for i in range(41)],steps=2)
     tube(name.replace('Lip','Gum'),[(x,y+.033,z+(-.009 if name.startswith('Upper') else .009)) for x,y,z in points],
          [.010]*len(points),gum,steps=2,sides=16)
-ball('Tongue',(0,-.265,.882),(.13,.048,.026),tongue)
+ball('Tongue',(0,-.265,.906),(.13,.048,.022),tongue)
 
 
 def pointed_tooth(name, x, base, tip, width):
@@ -286,7 +286,7 @@ def pointed_tooth(name, x, base, tip, width):
     tv=[]
     for t,rx,ry in rings:
         z=base+(tip-base)*t
-        center_y=front(x,z)+.043
+        center_y=front(x,z)+.028
         for j in range(24):
             a=2*math.pi*j/24
             tv.append((x+rx*math.cos(a),center_y+ry*math.sin(a),z))
@@ -304,13 +304,13 @@ def pointed_tooth(name, x, base, tip, width):
 for i,x in enumerate([-.286,-.204,-.108,0,.108,.204,.286]):
     u=x/WIDTH
     z=bottom(u)-.012
-    h=(top(u)-bottom(u))*(.76 if abs(u)<.8 else .7)
-    pointed_tooth('Tooth_Lower_'+str(i),x,z,z+h,.094 if abs(u)<.7 else .072)
+    h=(top(u)-bottom(u))*(.97 if abs(u)<.8 else .88)
+    pointed_tooth('Tooth_Lower_'+str(i),x,z,z+h,.111 if abs(u)<.7 else .082)
 for i,x in enumerate([-.31,-.246,-.155,-.054,.054,.155,.246,.31]):
     u=x/WIDTH
     z=top(u)+.010
-    h=(top(u)-bottom(u))*.42
-    pointed_tooth('Tooth_Upper_'+str(i),x,z,z-h,.060 if abs(u)<.7 else .045)
+    h=(top(u)-bottom(u))*.64
+    pointed_tooth('Tooth_Upper_'+str(i),x,z,z-h,.074 if abs(u)<.7 else .047)
 
 # One centered globe and a skin cap; all eye markings follow the sphere surface.
 CX,CY,CZ=0,-.307,1.234
@@ -338,7 +338,8 @@ for idx,v in enumerate(blink.data):
     lat=-math.pi/2+math.pi*row/ROWS
     lon=2*math.pi*col/COLS
     v.co=(CX+(RX+.007)*math.cos(lat)*math.cos(lon),CY+(RY+.007)*math.cos(lat)*math.sin(lon),CZ+(RZ+.007)*math.sin(lat))
-for name,rx,rz,offset,mat in [('Iris_Center',.087,.087,.0015,iris),('Pupil_Center',.046,.055,.0025,pupil)]:
+irisrim=material('iris dark outer rim','795015',.32)
+for name,rx,rz,offset,mat in [('Iris_Rim',.089,.089,.001,irisrim),('Iris_Center',.082,.082,.0018,iris),('Pupil_Center',.046,.055,.0025,pupil)]:
     pv=[]
     for row in range(17):
         r=max(.0001,row/16)
@@ -354,6 +355,11 @@ for name,rx,rz,offset,mat in [('Iris_Center',.087,.087,.0015,iris),('Pupil_Cente
             pf.append((row*64+col,row*64+(col+1)%64,(row+1)*64+(col+1)%64,(row+1)*64+col))
     mesh(name,pv,pf,mat)
 
+# A small stylized reflection sits on the visible lower globe and follows the blink occlusion.
+cx,cz=-.023,1.209
+cy=CY-RY*math.sqrt(1-(cx/RX)**2-((cz-CZ)/RZ)**2)-.004
+ball('Eye_Catchlight',(cx,cy,cz),(.010,.0025,.012),white,segments=24,rings=16)
+
 # Ivory crescent horns open inwards; these are shorter and fuller than Riff's curled horns.
 for s,side in [(-1,'L'),(1,'R')]:
     points=[(s*.328,.060,1.348),(s*.433,.065,1.43),(s*.484,.061,1.565),
@@ -364,7 +370,7 @@ for s,side in [(-1,'L'),(1,'R')]:
     apply(h,m)
 
 # Five uneven upright crown spikes, with small continuation buds over the rear crown.
-for i,(x,height) in enumerate([(-.14,.17),(-.076,.257),(0,.306),(.080,.249),(.143,.157)]):
+for i,(x,height) in enumerate([(-.14,.13),(-.076,.195),(0,.242),(.080,.189),(.143,.12)]):
     z=1.50-.2*abs(x)
     tuft=ball('Crest_'+str(i),(x,.035,z+height*.40),(.034,.039,height*.63),skin,segments=40,rings=28)
     tuft.rotation_euler[1]=x*.53
@@ -408,8 +414,8 @@ ground.data.materials.append(material('studio ivory','EDE3D1',.75))
 ground.is_shadow_catcher=True
 scene.world.use_nodes=True
 scene.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.85,.9,1,1)
-scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.25
-for name,pos,power,size,color in [('Key',(-3,-4,5),280,3.0,(1,.97,.91)),('Fill',(3,-2,3),100,3,(.91,.96,1)),('Rim',(1,3,4),250,3,(1,.96,.86))]:
+scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.18
+for name,pos,power,size,color in [('Key',(-3,-4,5),170,3.0,(1,.97,.91)),('Fill',(3,-2,3),60,3,(.91,.96,1)),('Rim',(1,3,4),150,3,(1,.96,.86))]:
     data=bpy.data.lights.new('Grit_'+name,'AREA')
     data.energy,data.size,data.shape,data.color=power,size,'DISK',color
     ob=bpy.data.objects.new(data.name,data)
