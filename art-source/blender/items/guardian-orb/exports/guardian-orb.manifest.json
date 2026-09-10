@@ -1,0 +1,175 @@
+{
+  "item": "guardian-orb",
+  "revision": "03",
+  "source": "art-source/blender/items/guardian-orb/guardian-orb.blend",
+  "triangles": 31080,
+  "meshObjects": 9,
+  "editableSourceObjects": 86,
+  "boundsMeters": [
+    [
+      -0.5589073896408081,
+      -0.562000036239624,
+      0.2271372526884079
+    ],
+    [
+      0.5384539365768433,
+      0.44899603724479675,
+      1.3346490859985352
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Orb | blue recessed joints": {
+      "Base Color": [
+        0.05448027700185776,
+        0.18782077729701996,
+        0.3049873113632202,
+        1.0
+      ],
+      "Metallic": 0.44999998807907104,
+      "Roughness": 0.4000000059604645,
+      "Emission Color": [
+        0.05448027700185776,
+        0.18782077729701996,
+        0.3049873113632202,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Orb | pearl ceramic armor": {
+      "Base Color": [
+        0.68668532371521,
+        0.7681511640548706,
+        0.8148465752601624,
+        1.0
+      ],
+      "Metallic": 0.3199999928474426,
+      "Roughness": 0.28999999165534973,
+      "Emission Color": [
+        0.68668532371521,
+        0.7681511640548706,
+        0.8148465752601624,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Orb | cyan energy": {
+      "Base Color": [
+        0.0,
+        0.6239603757858276,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.20000000298023224,
+      "Emission Color": [
+        0.0,
+        0.6239603757858276,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.8999999761581421,
+      "Transmission Weight": 0.0
+    },
+    "Orb | sapphire iris": {
+      "Base Color": [
+        0.002428215928375721,
+        0.19120168685913086,
+        0.5583403706550598,
+        1.0
+      ],
+      "Metallic": 0.3499999940395355,
+      "Roughness": 0.15000000596046448,
+      "Emission Color": [
+        0.002428215928375721,
+        0.19120168685913086,
+        0.5583403706550598,
+        1.0
+      ],
+      "Emission Strength": 0.30000001192092896,
+      "Transmission Weight": 0.0
+    },
+    "Orb | turquoise iris filaments": {
+      "Base Color": [
+        0.010960093699395657,
+        0.4564110338687897,
+        0.7912979125976562,
+        1.0
+      ],
+      "Metallic": 0.25,
+      "Roughness": 0.25999999046325684,
+      "Emission Color": [
+        0.010960093699395657,
+        0.4564110338687897,
+        0.7912979125976562,
+        1.0
+      ],
+      "Emission Strength": 0.5,
+      "Transmission Weight": 0.0
+    },
+    "Orb | deep navy pupil": {
+      "Base Color": [
+        0.0009105809731408954,
+        0.006995410192757845,
+        0.01850022003054619,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.10000000149011612,
+      "Emission Color": [
+        0.0009105809731408954,
+        0.006995410192757845,
+        0.01850022003054619,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Orb | lens catchlight": {
+      "Base Color": [
+        0.68668532371521,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.1599999964237213,
+      "Emission Color": [
+        0.68668532371521,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 2.5,
+      "Transmission Weight": 0.0
+    },
+    "Orb | silver bezels": {
+      "Base Color": [
+        0.21952620148658752,
+        0.33716362714767456,
+        0.42869049310684204,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.27000001072883606,
+      "Emission Color": [
+        0.21952620148658752,
+        0.33716362714767456,
+        0.42869049310684204,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "guardian-orb.fbx": "deaf8a343ac6d52d5b43177febb21a627a7c375030d0e0af811bec9ed4728be8",
+    "guardian-orb.glb": "3838c1c2fe8f0e3096ac1168f552233b5986b6c83ebf0d7042ce3707fe4dc3ba"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

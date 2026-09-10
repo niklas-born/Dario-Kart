@@ -1,0 +1,283 @@
+{
+  "item": "phase-gear",
+  "revision": "02",
+  "source": "art-source/blender/items/phase-gear/phase-gear.blend",
+  "triangles": 7664,
+  "meshObjects": 8,
+  "editableSourceObjects": 165,
+  "boundsMeters": [
+    [
+      -0.5270950794219971,
+      -0.13705448806285858,
+      0.23588822782039642
+    ],
+    [
+      0.5191714763641357,
+      0.1278700828552246,
+      1.2793145179748535
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Gear | spectral band 0": {
+      "Base Color": [
+        0.0382043719291687,
+        0.7835378050804138,
+        0.9559733271598816,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.0382043719291687,
+        0.7835378050804138,
+        0.9559733271598816,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 1": {
+      "Base Color": [
+        0.09084171056747437,
+        0.6938717365264893,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.09084171056747437,
+        0.6938717365264893,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 2": {
+      "Base Color": [
+        0.18782077729701996,
+        0.5149176716804504,
+        0.9734452962875366,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.18782077729701996,
+        0.5149176716804504,
+        0.9734452962875366,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 3": {
+      "Base Color": [
+        0.2961382567882538,
+        0.2961382567882538,
+        0.8713670969009399,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.2961382567882538,
+        0.2961382567882538,
+        0.8713670969009399,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 4": {
+      "Base Color": [
+        0.38132601976394653,
+        0.177888423204422,
+        0.8069522380828857,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.38132601976394653,
+        0.177888423204422,
+        0.8069522380828857,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 5": {
+      "Base Color": [
+        0.5088813304901123,
+        0.11953842639923096,
+        0.8631572127342224,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.5088813304901123,
+        0.11953842639923096,
+        0.8631572127342224,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | spectral band 6": {
+      "Base Color": [
+        0.6938717365264893,
+        0.1384316086769104,
+        0.8631572127342224,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.6938717365264893,
+        0.1384316086769104,
+        0.8631572127342224,
+        1.0
+      ],
+      "Emission Strength": 0.44999998807907104,
+      "Transmission Weight": 0.41999998688697815
+    },
+    "Gear | luminous edge 6": {
+      "Base Color": [
+        0.6938717365264893,
+        0.1384316086769104,
+        0.8631572127342224,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.6938717365264893,
+        0.1384316086769104,
+        0.8631572127342224,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 5": {
+      "Base Color": [
+        0.5088813304901123,
+        0.11953842639923096,
+        0.8631572127342224,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.5088813304901123,
+        0.11953842639923096,
+        0.8631572127342224,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 4": {
+      "Base Color": [
+        0.38132601976394653,
+        0.177888423204422,
+        0.8069522380828857,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.38132601976394653,
+        0.177888423204422,
+        0.8069522380828857,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 3": {
+      "Base Color": [
+        0.2961382567882538,
+        0.2961382567882538,
+        0.8713670969009399,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.2961382567882538,
+        0.2961382567882538,
+        0.8713670969009399,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 2": {
+      "Base Color": [
+        0.18782077729701996,
+        0.5149176716804504,
+        0.9734452962875366,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.18782077729701996,
+        0.5149176716804504,
+        0.9734452962875366,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 1": {
+      "Base Color": [
+        0.09084171056747437,
+        0.6938717365264893,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.09084171056747437,
+        0.6938717365264893,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    },
+    "Gear | luminous edge 0": {
+      "Base Color": [
+        0.0382043719291687,
+        0.7835378050804138,
+        0.9559733271598816,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.0382043719291687,
+        0.7835378050804138,
+        0.9559733271598816,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "phase-gear.fbx": "a5a52f742eb0f7db72e4f31a9606caf8dd3e9e56169b7fd21d9d781ddd4e6e0f",
+    "phase-gear.glb": "060f259a54034d38dfcbb7024df5e07fae8412f753821cf7f84bb68a37cde973"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

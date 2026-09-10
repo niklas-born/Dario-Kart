@@ -2,6 +2,18 @@
   "schemaVersion": 1,
   "assets": [
     {
+      "id": "harbor-prototype-reference",
+      "source": "/Users/niklasborn/Downloads/mario_kart_8_-_toad_harbor.glb",
+      "author": "H,yoshi (Sketchfab uploader, as recorded in GLB metadata)",
+      "sourceUrl": "https://sketchfab.com/3d-models/mario-kart-8-toad-harbor-97681cab2c9445069b335e940116562f",
+      "declaredLicense": "CC-BY-4.0 in embedded metadata; underlying Nintendo content rights not independently verified",
+      "purpose": "Local track conversion experiment requested by user",
+      "modifications": "Scale 0.05, vertical origin adjustment, extracted textures, FBX scenery export, original smooth road overlay and gameplay markers",
+      "builder": "tools/blender/build_harbor.py",
+      "runtimeModel": "game/Assets/_DarioKart/Art/Models/Tracks/harbor-prototype/harbor-scenery.fbx",
+      "review": "art-source/blender/tracks/harbor-prototype/README.md"
+    },
+    {
       "id": "dune-hopper",
       "source": "art-source/blender/karts/dune-hopper/grit-dune-hopper.blend",
       "author": "Dario Kart project",

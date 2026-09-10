@@ -1,0 +1,48 @@
+{
+  "kart": "dune-hopper",
+  "source": "art-source/blender/karts/dune-hopper/grit-dune-hopper.blend",
+  "sourceSha256": "e10a4f2d34edb3a4c668ca820262a32f22832172a122f0fca190d068306c4079",
+  "authoringFile": "art-source/blender/karts/dune-hopper/grit-dune-hopper-turns.blend",
+  "maxWristErrorMeters": 2.7516760397880357e-07,
+  "testedSteering": [
+    {
+      "input": -28,
+      "frontLeft": -36.59412159165024,
+      "frontRight": -22.496228654150404
+    },
+    {
+      "input": -20,
+      "frontLeft": -24.311781727999,
+      "frontRight": -16.94842457628047
+    },
+    {
+      "input": 0,
+      "frontLeft": 0.0,
+      "frontRight": 0.0
+    },
+    {
+      "input": 20,
+      "frontLeft": 16.94842286873318,
+      "frontRight": 24.311781727999
+    },
+    {
+      "input": 28,
+      "frontLeft": 22.496228654150404,
+      "frontRight": 36.594125006744825
+    }
+  ],
+  "rearWheelsStayStraight": true,
+  "wheelCentersStayFixed": true,
+  "radiusBasedRolling": true,
+  "spareStaysFixed": true,
+  "previewFrames": [
+    1,
+    145
+  ],
+  "fps": 24,
+  "glbAnimationVerified": true,
+  "glbSha256": "2137a1d48f43e55b83ca128c4cd517d15c8117fe091568794bfc56b9fedea042",
+  "glbBakedDurationSeconds": 6,
+  "driverBones": 14,
+  "acceptedSourceUnchanged": true
+}

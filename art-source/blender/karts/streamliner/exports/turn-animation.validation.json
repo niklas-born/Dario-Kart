@@ -1,0 +1,48 @@
+{
+  "kart": "streamliner",
+  "source": "art-source/blender/karts/streamliner/riff-streamliner.blend",
+  "sourceSha256": "32e70a8d4093b4b33b556e29a8c96b31a6a753b6d00c7c2d063a507262f7a31d",
+  "authoringFile": "art-source/blender/karts/streamliner/riff-streamliner-turns.blend",
+  "maxWristErrorMeters": 2.682209014892578e-07,
+  "testedSteering": [
+    {
+      "input": -28,
+      "frontLeft": -34.384610036664476,
+      "frontRight": -23.49721849022516
+    },
+    {
+      "input": -20,
+      "frontLeft": -23.245599443843766,
+      "frontRight": -17.524361495021576
+    },
+    {
+      "input": 0,
+      "frontLeft": 0.0,
+      "frontRight": 0.0
+    },
+    {
+      "input": 20,
+      "frontLeft": 17.524359787474285,
+      "frontRight": 23.245599443843766
+    },
+    {
+      "input": 28,
+      "frontLeft": 23.49721849022516,
+      "frontRight": 34.384610036664476
+    }
+  ],
+  "rearWheelsStayStraight": true,
+  "wheelCentersStayFixed": true,
+  "radiusBasedRolling": true,
+  "spareStaysFixed": false,
+  "previewFrames": [
+    1,
+    145
+  ],
+  "fps": 24,
+  "glbAnimationVerified": true,
+  "glbSha256": "4b62c5542d2aa23c50aea60f63fccbd4f41801ad6c32841f64c2be30161c61ec",
+  "glbBakedDurationSeconds": 6,
+  "driverBones": 14,
+  "acceptedSourceUnchanged": true
+}

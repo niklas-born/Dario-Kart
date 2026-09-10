@@ -1,0 +1,23 @@
+{
+    "laps": [
+        {
+            "name": "Yellow main circuit",
+            "seconds": 53.921043395996097,
+            "completedLaps": 1,
+            "recoveries": 0
+        },
+        {
+            "name": "Gazebo and upper street alternative",
+            "seconds": 65.26106262207031,
+            "completedLaps": 1,
+            "recoveries": 0
+        },
+        {
+            "name": "Outside descent alternative",
+            "seconds": 66.96077728271485,
+            "completedLaps": 1,
+            "recoveries": 0
+        }
+    ],
+    "movingHazard": true
+}

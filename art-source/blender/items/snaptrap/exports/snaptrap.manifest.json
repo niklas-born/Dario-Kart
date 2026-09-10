@@ -1,0 +1,265 @@
+{
+  "item": "snaptrap",
+  "revision": "03",
+  "source": "art-source/blender/items/snaptrap/snaptrap.blend",
+  "triangles": 24128,
+  "meshObjects": 13,
+  "editableSourceObjects": 50,
+  "boundsMeters": [
+    [
+      -0.46639561653137207,
+      -0.375,
+      -0.009999997913837433
+    ],
+    [
+      0.535317063331604,
+      0.3799998462200165,
+      1.2999999523162842
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Base | charcoal rubber": {
+      "Base Color": [
+        0.021219009533524513,
+        0.022173885256052017,
+        0.03433980792760849,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.41999998688697815,
+      "Emission Color": [
+        0.021219009533524513,
+        0.022173885256052017,
+        0.03433980792760849,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Base | safety yellow": {
+      "Base Color": [
+        1.0,
+        0.5088813304901123,
+        0.002428215928375721,
+        1.0
+      ],
+      "Metallic": 0.25,
+      "Roughness": 0.3199999928474426,
+      "Emission Color": [
+        1.0,
+        0.5088813304901123,
+        0.002428215928375721,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Base | rim steel": {
+      "Base Color": [
+        0.09530746936798096,
+        0.08437620848417282,
+        0.12477181851863861,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.09530746936798096,
+        0.08437620848417282,
+        0.12477181851863861,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | emerald foliage": {
+      "Base Color": [
+        0.03310476616024971,
+        0.2581828534603119,
+        0.008568125776946545,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.4699999988079071,
+      "Emission Color": [
+        0.03310476616024971,
+        0.2581828534603119,
+        0.008568125776946545,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | leaf midrib": {
+      "Base Color": [
+        0.18782077729701996,
+        0.4564110338687897,
+        0.024157632142305374,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.47999998927116394,
+      "Emission Color": [
+        0.18782077729701996,
+        0.4564110338687897,
+        0.024157632142305374,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | deep mouth cavity": {
+      "Base Color": [
+        0.12743768095970154,
+        0.005605391692370176,
+        0.019382361322641373,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.6200000047683716,
+      "Emission Color": [
+        0.12743768095970154,
+        0.005605391692370176,
+        0.019382361322641373,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | tongue coral": {
+      "Base Color": [
+        0.5647115111351013,
+        0.03189603239297867,
+        0.0802198201417923,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.4300000071525574,
+      "Emission Color": [
+        0.5647115111351013,
+        0.03189603239297867,
+        0.0802198201417923,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | scarlet jaw": {
+      "Base Color": [
+        0.68668532371521,
+        0.015208514407277107,
+        0.06480326503515244,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.36000001430511475,
+      "Emission Color": [
+        0.68668532371521,
+        0.015208514407277107,
+        0.06480326503515244,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Plant | fleshy lip edge": {
+      "Base Color": [
+        0.8796223998069763,
+        0.03189603239297867,
+        0.08437620848417282,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.8796223998069763,
+        0.03189603239297867,
+        0.08437620848417282,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "LowerJaw | warm ivory teeth": {
+      "Base Color": [
+        1.0,
+        0.8713670969009399,
+        0.577580451965332,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2800000011920929,
+      "Emission Color": [
+        1.0,
+        0.8713670969009399,
+        0.577580451965332,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "UpperJaw | warm ivory teeth": {
+      "Base Color": [
+        1.0,
+        0.8713670969009399,
+        0.577580451965332,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2800000011920929,
+      "Emission Color": [
+        1.0,
+        0.8713670969009399,
+        0.577580451965332,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Alarm | candy red lens": {
+      "Base Color": [
+        1.0,
+        0.007499032188206911,
+        0.022173885256052017,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.20000000298023224,
+      "Emission Color": [
+        1.0,
+        0.007499032188206911,
+        0.022173885256052017,
+        1.0
+      ],
+      "Emission Strength": 0.3499999940395355,
+      "Transmission Weight": 0.0
+    },
+    "Alarm | golden bulb": {
+      "Base Color": [
+        1.0,
+        0.6038273572921753,
+        0.021219009533524513,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.20000000298023224,
+      "Emission Color": [
+        1.0,
+        0.6038273572921753,
+        0.021219009533524513,
+        1.0
+      ],
+      "Emission Strength": 5.0,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "snaptrap.fbx": "516d19c2cb63ecfa10294020764ed691aa442efa1735822412ad80599aab9bca",
+    "snaptrap.glb": "b4fb03ad2dd097079a15b9b5d0ab667c5a76c24a5991e7b184edf7393e3e4d8d"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

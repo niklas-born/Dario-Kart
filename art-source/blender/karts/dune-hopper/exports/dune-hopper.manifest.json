@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "dune-hopper",
   "source": "art-source/blender/karts/dune-hopper/grit-dune-hopper.blend",
-  "sourceSha256": "4c4ddb01b3a82e101b9ad8361e373a02e1e46f0bef3a703c2380c578c151a35e",
+  "sourceSha256": "5aae23803c413295926597b47349f9a86935eb50c8447215c7b0c00c0382992b",
   "output": "game/Assets/_DarioKart/Art/Models/Karts/dune-hopper.fbx",
   "outputSha256": "309d60adb3d1f133b81e4032d6ebae7d1ca0c470bd201aa6cf9c044f9a50f15a",
   "blenderVersion": "5.2.1 LTS",

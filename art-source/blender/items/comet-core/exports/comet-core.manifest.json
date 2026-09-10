@@ -1,0 +1,193 @@
+{
+  "item": "comet-core",
+  "revision": "03",
+  "source": "art-source/blender/items/comet-core/comet-core.blend",
+  "triangles": 15984,
+  "meshObjects": 14,
+  "editableSourceObjects": 90,
+  "boundsMeters": [
+    [
+      -0.8685911297798157,
+      -0.5298677086830139,
+      -0.06456601619720459
+    ],
+    [
+      0.9551746845245361,
+      0.5483018755912781,
+      1.8747789859771729
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Core | golden molten fissures": {
+      "Base Color": [
+        1.0,
+        0.19120168685913086,
+        0.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2800000011920929,
+      "Emission Color": [
+        1.0,
+        0.19120168685913086,
+        0.0,
+        1.0
+      ],
+      "Emission Strength": 5.0,
+      "Transmission Weight": 0.0
+    },
+    "Core | basalt 2": {
+      "Base Color": [
+        0.4507857859134674,
+        0.05951123684644699,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Metallic": 0.07999999821186066,
+      "Roughness": 0.5,
+      "Emission Color": [
+        0.4507857859134674,
+        0.05951123684644699,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Core | basalt 4": {
+      "Base Color": [
+        0.12743768095970154,
+        0.014443843625485897,
+        0.0030352699104696512,
+        1.0
+      ],
+      "Metallic": 0.07999999821186066,
+      "Roughness": 0.5,
+      "Emission Color": [
+        0.12743768095970154,
+        0.014443843625485897,
+        0.0030352699104696512,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Core | basalt 0": {
+      "Base Color": [
+        0.2345505803823471,
+        0.019382361322641373,
+        0.0009105809731408954,
+        1.0
+      ],
+      "Metallic": 0.07999999821186066,
+      "Roughness": 0.5,
+      "Emission Color": [
+        0.2345505803823471,
+        0.019382361322641373,
+        0.0009105809731408954,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Core | basalt 3": {
+      "Base Color": [
+        0.5271151065826416,
+        0.09758734703063965,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Metallic": 0.07999999821186066,
+      "Roughness": 0.5,
+      "Emission Color": [
+        0.5271151065826416,
+        0.09758734703063965,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Core | basalt 1": {
+      "Base Color": [
+        0.35153260827064514,
+        0.03560131415724754,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Metallic": 0.07999999821186066,
+      "Roughness": 0.5,
+      "Emission Color": [
+        0.35153260827064514,
+        0.03560131415724754,
+        0.0006070539820939302,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Cage | warm gunmetal": {
+      "Base Color": [
+        0.16513219475746155,
+        0.14126329123973846,
+        0.18447498977184296,
+        1.0
+      ],
+      "Metallic": 0.699999988079071,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.16513219475746155,
+        0.14126329123973846,
+        0.18447498977184296,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Cage | silver rivets": {
+      "Base Color": [
+        0.5711248517036438,
+        0.46207699179649353,
+        0.42869049310684204,
+        1.0
+      ],
+      "Metallic": 0.800000011920929,
+      "Roughness": 0.23000000417232513,
+      "Emission Color": [
+        0.5711248517036438,
+        0.46207699179649353,
+        0.42869049310684204,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "VFX | hot gold": {
+      "Base Color": [
+        1.0,
+        0.7835378050804138,
+        0.10224173218011856,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        1.0,
+        0.7835378050804138,
+        0.10224173218011856,
+        1.0
+      ],
+      "Emission Strength": 7.0,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "comet-core.fbx": "2e80c2e3f321621268a2575857b533f5e79d6105bb855cddfbec51cbfaf60087",
+    "comet-core.glb": "0cb1a376a1861d55e54c2a4cd13b8ba622a891d7421a5cdb5e3dfe98cdfbcab8"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

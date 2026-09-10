@@ -1,0 +1,193 @@
+{
+  "item": "turbo-battery",
+  "revision": "02",
+  "source": "art-source/blender/items/turbo-battery/turbo-battery.blend",
+  "triangles": 14724,
+  "meshObjects": 10,
+  "editableSourceObjects": 42,
+  "boundsMeters": [
+    [
+      -0.5253509283065796,
+      -0.3004301190376282,
+      0.11163424700498581
+    ],
+    [
+      0.5253509283065796,
+      0.30050960183143616,
+      1.2336987257003784
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Battery | lime energy cell": {
+      "Base Color": [
+        0.09084171056747437,
+        0.8631572127342224,
+        0.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.09084171056747437,
+        0.8631572127342224,
+        0.0,
+        1.0
+      ],
+      "Emission Strength": 0.8500000238418579,
+      "Transmission Weight": 0.0
+    },
+    "Battery | turquoise glass": {
+      "Base Color": [
+        0.15592646598815918,
+        0.9559733271598816,
+        0.7083757519721985,
+        1.0
+      ],
+      "Metallic": 0.05000000074505806,
+      "Roughness": 0.1599999964237213,
+      "Emission Color": [
+        0.15592646598815918,
+        0.9559733271598816,
+        0.7083757519721985,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.9200000166893005
+    },
+    "Battery | violet anodized caps": {
+      "Base Color": [
+        0.13013647496700287,
+        0.0802198201417923,
+        0.43415364623069763,
+        1.0
+      ],
+      "Metallic": 0.5,
+      "Roughness": 0.27000001072883606,
+      "Emission Color": [
+        0.13013647496700287,
+        0.0802198201417923,
+        0.43415364623069763,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Battery | electric cyan seam": {
+      "Base Color": [
+        0.021219009533524513,
+        0.8148465752601624,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.20000000298023224,
+      "Emission Color": [
+        0.021219009533524513,
+        0.8148465752601624,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 2.0,
+      "Transmission Weight": 0.0
+    },
+    "Battery | dark cap seal": {
+      "Base Color": [
+        0.03433980792760849,
+        0.039546236395835876,
+        0.0666259378194809,
+        1.0
+      ],
+      "Metallic": 0.44999998807907104,
+      "Roughness": 0.3799999952316284,
+      "Emission Color": [
+        0.03433980792760849,
+        0.039546236395835876,
+        0.0666259378194809,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Battery | purple cap inset": {
+      "Base Color": [
+        0.34670406579971313,
+        0.06847816705703735,
+        0.7083757519721985,
+        1.0
+      ],
+      "Metallic": 0.30000001192092896,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.34670406579971313,
+        0.06847816705703735,
+        0.7083757519721985,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Battery | lightning gold": {
+      "Base Color": [
+        0.715693473815918,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.25,
+      "Emission Color": [
+        0.715693473815918,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "Emission Strength": 0.699999988079071,
+      "Transmission Weight": 0.0
+    },
+    "Battery | lightning edge": {
+      "Base Color": [
+        0.9301108717918396,
+        1.0,
+        0.4507857859134674,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.23000000417232513,
+      "Emission Color": [
+        0.9301108717918396,
+        1.0,
+        0.4507857859134674,
+        1.0
+      ],
+      "Emission Strength": 3.0,
+      "Transmission Weight": 0.0
+    },
+    "Battery | charged bubbles": {
+      "Base Color": [
+        0.46207699179649353,
+        1.0,
+        0.03433980792760849,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.23999999463558197,
+      "Emission Color": [
+        0.46207699179649353,
+        1.0,
+        0.03433980792760849,
+        1.0
+      ],
+      "Emission Strength": 1.600000023841858,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "turbo-battery.fbx": "a90e9b95857055fcea7601dcc66f755ebdfddcd2d75e0ee79884a253a956cac2",
+    "turbo-battery.glb": "74e366f8ae9b79964cb05b8e731a7577f188eab748f787c6bb8f7c3f8652dd69"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

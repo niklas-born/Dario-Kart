@@ -1,121 +1,121 @@
 {
   "id": "brisk-driver",
-  "sourceSculpt": "art-source/blender/characters/brisk/brisk-driver-v01.blend",
-  "sourceSculptSha256": "7dd1ac2c3660401c776add19cd4e0db8f2d33c87933b8cfc4d1afef9135e705f",
+  "sourceSculpt": "art-source/blender/characters/brisk/brisk-driver-v02.blend",
+  "sourceSculptSha256": "9b20d9b716ae314f5d9df184671188a9c41865c5fd540ea60a3f75da200bfae5",
   "optimization": [
     {
       "mesh": "Brisk_Skin",
-      "beforeTriangles": 424728,
+      "beforeTriangles": 422076,
       "afterTriangles": 23000,
-      "sampledMaxSurfaceDeviationMeters": 0.0007504637469537556
+      "sampledMaxSurfaceDeviationMeters": 0.000647925422526896
     },
     {
       "mesh": "Upper_Gum",
       "beforeTriangles": 2588,
       "afterTriangles": 350,
-      "sampledMaxSurfaceDeviationMeters": 0.0016076850006356835
+      "sampledMaxSurfaceDeviationMeters": 0.0016077179461717606
     },
     {
       "mesh": "Lower_Gum",
       "beforeTriangles": 2588,
       "afterTriangles": 350,
-      "sampledMaxSurfaceDeviationMeters": 0.0018502097809687257
+      "sampledMaxSurfaceDeviationMeters": 0.0018501202575862408
     },
     {
       "mesh": "Tongue",
       "beforeTriangles": 2160,
       "afterTriangles": 348,
-      "sampledMaxSurfaceDeviationMeters": 0.0008483556448481977
+      "sampledMaxSurfaceDeviationMeters": 0.000649396562948823
     },
     {
       "mesh": "Tooth_Upper_0",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005458029918372631
+      "sampledMaxSurfaceDeviationMeters": 0.0005551412468776107
     },
     {
       "mesh": "Tooth_Upper_1",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0006552469567395747
+      "sampledMaxSurfaceDeviationMeters": 0.0005230307579040527
     },
     {
       "mesh": "Tooth_Upper_2",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0006895638653077185
+      "sampledMaxSurfaceDeviationMeters": 0.0007066784310154617
     },
     {
       "mesh": "Tooth_Upper_3",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0006668012356385589
+      "sampledMaxSurfaceDeviationMeters": 0.000719921721611172
     },
     {
       "mesh": "Tooth_Upper_4",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0006546488730236888
+      "sampledMaxSurfaceDeviationMeters": 0.0007662012940272689
     },
     {
       "mesh": "Tooth_Upper_5",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.000691749737598002
+      "sampledMaxSurfaceDeviationMeters": 0.0006807512254454195
     },
     {
       "mesh": "Tooth_Upper_6",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005155781982466578
+      "sampledMaxSurfaceDeviationMeters": 0.0005718901520594954
     },
     {
       "mesh": "Tooth_Upper_7",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.00041642438736744225
+      "sampledMaxSurfaceDeviationMeters": 0.0005396328633651137
     },
     {
       "mesh": "Tooth_Lower_0",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0004951641894876957
+      "sampledMaxSurfaceDeviationMeters": 0.0005253759445622563
     },
     {
       "mesh": "Tooth_Lower_1",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005589760839939117
+      "sampledMaxSurfaceDeviationMeters": 0.0007452134741470218
     },
     {
       "mesh": "Tooth_Lower_2",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0006234509055502713
+      "sampledMaxSurfaceDeviationMeters": 0.000678733573295176
     },
     {
       "mesh": "Tooth_Lower_3",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005835223710164428
+      "sampledMaxSurfaceDeviationMeters": 0.0007900942582637072
     },
     {
       "mesh": "Tooth_Lower_4",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005622656317427754
+      "sampledMaxSurfaceDeviationMeters": 0.0008267565863206983
     },
     {
       "mesh": "Tooth_Lower_5",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0005913059576414526
+      "sampledMaxSurfaceDeviationMeters": 0.000652603805065155
     },
     {
       "mesh": "Tooth_Lower_6",
       "beforeTriangles": 3456,
       "afterTriangles": 240,
-      "sampledMaxSurfaceDeviationMeters": 0.0007805204368196428
+      "sampledMaxSurfaceDeviationMeters": 0.0006089628441259265
     },
     {
       "mesh": "Eye_L",
@@ -127,13 +127,13 @@
       "mesh": "Iris_Rim_L",
       "beforeTriangles": 1152,
       "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 4.897524922853336e-05
+      "sampledMaxSurfaceDeviationMeters": 4.9002796004060656e-05
     },
     {
       "mesh": "Iris_L",
       "beforeTriangles": 1152,
-      "afterTriangles": 700,
-      "sampledMaxSurfaceDeviationMeters": 4.039506529807113e-05
+      "afterTriangles": 699,
+      "sampledMaxSurfaceDeviationMeters": 4.036614336655475e-05
     },
     {
       "mesh": "Pupil_L",
@@ -145,7 +145,7 @@
       "mesh": "Eye_Catchlight_L",
       "beforeTriangles": 1152,
       "afterTriangles": 159,
-      "sampledMaxSurfaceDeviationMeters": 5.695441359421238e-06
+      "sampledMaxSurfaceDeviationMeters": 6.315297923720209e-06
     },
     {
       "mesh": "Eye_R",
@@ -157,25 +157,25 @@
       "mesh": "Iris_Rim_R",
       "beforeTriangles": 1152,
       "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 4.92034487251658e-05
+      "sampledMaxSurfaceDeviationMeters": 4.9229198339162394e-05
     },
     {
       "mesh": "Iris_R",
       "beforeTriangles": 1152,
-      "afterTriangles": 699,
+      "afterTriangles": 700,
       "sampledMaxSurfaceDeviationMeters": 4.0599294152343646e-05
     },
     {
       "mesh": "Pupil_R",
       "beforeTriangles": 1152,
-      "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 2.0758066966664046e-05
+      "afterTriangles": 700,
+      "sampledMaxSurfaceDeviationMeters": 2.07621469598962e-05
     },
     {
       "mesh": "Eye_Catchlight_R",
       "beforeTriangles": 1152,
-      "afterTriangles": 160,
-      "sampledMaxSurfaceDeviationMeters": 5.892443823540816e-06
+      "afterTriangles": 159,
+      "sampledMaxSurfaceDeviationMeters": 8.055287253228016e-06
     },
     {
       "mesh": "Eye_Center",
@@ -187,43 +187,43 @@
       "mesh": "Iris_Rim_Center",
       "beforeTriangles": 1152,
       "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 2.4839697289280593e-05
+      "sampledMaxSurfaceDeviationMeters": 2.3675615011597984e-05
     },
     {
       "mesh": "Iris_Center",
       "beforeTriangles": 1152,
       "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 1.9687589883687906e-05
+      "sampledMaxSurfaceDeviationMeters": 1.9689616237883456e-05
     },
     {
       "mesh": "Pupil_Center",
       "beforeTriangles": 1152,
-      "afterTriangles": 699,
-      "sampledMaxSurfaceDeviationMeters": 1.1314618859614711e-05
+      "afterTriangles": 700,
+      "sampledMaxSurfaceDeviationMeters": 1.1341311619617045e-05
     },
     {
       "mesh": "Eye_Catchlight_Center",
       "beforeTriangles": 1152,
       "afterTriangles": 159,
-      "sampledMaxSurfaceDeviationMeters": 4.357751549832756e-06
+      "sampledMaxSurfaceDeviationMeters": 4.372205694380682e-06
     },
     {
       "mesh": "Eyebrow_L",
-      "beforeTriangles": 1732,
+      "beforeTriangles": 3260,
       "afterTriangles": 350,
-      "sampledMaxSurfaceDeviationMeters": 0.0007371935644187033
+      "sampledMaxSurfaceDeviationMeters": 0.0008870301535353065
     },
     {
       "mesh": "Eyebrow_R",
-      "beforeTriangles": 1732,
+      "beforeTriangles": 3260,
       "afterTriangles": 350,
-      "sampledMaxSurfaceDeviationMeters": 0.0007040506461635232
+      "sampledMaxSurfaceDeviationMeters": 0.0008725299849174917
     },
     {
       "mesh": "Belly_Patch",
-      "beforeTriangles": 9984,
+      "beforeTriangles": 9600,
       "afterTriangles": 1800,
-      "sampledMaxSurfaceDeviationMeters": 0.000320049817673862
+      "sampledMaxSurfaceDeviationMeters": 0.0003210811410099268
     },
     {
       "mesh": "Horn_Crown_Center",
@@ -451,7 +451,7 @@
       "mesh": "Scale_Temple_L6",
       "beforeTriangles": 720,
       "afterTriangles": 120,
-      "sampledMaxSurfaceDeviationMeters": 0.0005003861151635647
+      "sampledMaxSurfaceDeviationMeters": 0.0004869728581979871
     },
     {
       "mesh": "Scale_Temple_L7",
@@ -619,7 +619,7 @@
       "mesh": "Scale_Temple_R6",
       "beforeTriangles": 720,
       "afterTriangles": 120,
-      "sampledMaxSurfaceDeviationMeters": 0.0004869728581979871
+      "sampledMaxSurfaceDeviationMeters": 0.0005003861151635647
     },
     {
       "mesh": "Scale_Temple_R7",
@@ -643,7 +643,7 @@
       "mesh": "Scale_Temple_R10",
       "beforeTriangles": 720,
       "afterTriangles": 120,
-      "sampledMaxSurfaceDeviationMeters": 0.0004264851158950478
+      "sampledMaxSurfaceDeviationMeters": 0.0005096472450532019
     },
     {
       "mesh": "Scale_Temple_R11",
@@ -655,7 +655,7 @@
       "mesh": "Scale_Temple_R12",
       "beforeTriangles": 720,
       "afterTriangles": 120,
-      "sampledMaxSurfaceDeviationMeters": 0.0003678791399579495
+      "sampledMaxSurfaceDeviationMeters": 0.0003459771105553955
     },
     {
       "mesh": "Scale_Temple_R13",
@@ -749,8 +749,8 @@
     }
   ],
   "checks": {
-    "triangles": 75435,
-    "meshes": 128,
+    "triangles": 75436,
+    "meshes": 44,
     "bones": 14,
     "blinkTargets": 3,
     "UVmapped": true,
@@ -762,6 +762,137 @@
     ],
     "unityRendererVerified": false
   },
+  "preparedGroups": {
+    "Tooth_Upper": [
+      "Tooth_Upper_0",
+      "Tooth_Upper_1",
+      "Tooth_Upper_2",
+      "Tooth_Upper_3",
+      "Tooth_Upper_4",
+      "Tooth_Upper_5",
+      "Tooth_Upper_6",
+      "Tooth_Upper_7"
+    ],
+    "Tooth_Lower": [
+      "Tooth_Lower_0",
+      "Tooth_Lower_1",
+      "Tooth_Lower_2",
+      "Tooth_Lower_3",
+      "Tooth_Lower_4",
+      "Tooth_Lower_5",
+      "Tooth_Lower_6"
+    ],
+    "Horn_Crown_Center": [
+      "Horn_Crown_Center",
+      "Horn_Band_Crown_Center_0",
+      "Horn_Band_Crown_Center_1",
+      "Horn_Band_Crown_Center_2"
+    ],
+    "Horn_Crown_Inner_L": [
+      "Horn_Crown_Inner_L",
+      "Horn_Band_Crown_Inner_L_0",
+      "Horn_Band_Crown_Inner_L_1",
+      "Horn_Band_Crown_Inner_L_2"
+    ],
+    "Horn_Crown_Outer_L": [
+      "Horn_Crown_Outer_L",
+      "Horn_Band_Crown_Outer_L_0",
+      "Horn_Band_Crown_Outer_L_1",
+      "Horn_Band_Crown_Outer_L_2"
+    ],
+    "Horn_Side_L": [
+      "Horn_Side_L",
+      "Horn_Band_Side_L_0",
+      "Horn_Band_Side_L_1",
+      "Horn_Band_Side_L_2"
+    ],
+    "Horn_Crown_Inner_R": [
+      "Horn_Crown_Inner_R",
+      "Horn_Band_Crown_Inner_R_0",
+      "Horn_Band_Crown_Inner_R_1",
+      "Horn_Band_Crown_Inner_R_2"
+    ],
+    "Horn_Crown_Outer_R": [
+      "Horn_Crown_Outer_R",
+      "Horn_Band_Crown_Outer_R_0",
+      "Horn_Band_Crown_Outer_R_1",
+      "Horn_Band_Crown_Outer_R_2"
+    ],
+    "Horn_Side_R": [
+      "Horn_Side_R",
+      "Horn_Band_Side_R_0",
+      "Horn_Band_Side_R_1",
+      "Horn_Band_Side_R_2"
+    ],
+    "Scale_Temple_L": [
+      "Scale_Temple_L0",
+      "Scale_Temple_L1",
+      "Scale_Temple_L2",
+      "Scale_Temple_L3",
+      "Scale_Temple_L4",
+      "Scale_Temple_L5",
+      "Scale_Temple_L6",
+      "Scale_Temple_L7",
+      "Scale_Temple_L8",
+      "Scale_Temple_L9",
+      "Scale_Temple_L10",
+      "Scale_Temple_L11",
+      "Scale_Temple_L12",
+      "Scale_Temple_L13"
+    ],
+    "Scale_Back_L": [
+      "Scale_Back_L0",
+      "Scale_Back_L1",
+      "Scale_Back_L2",
+      "Scale_Back_L3",
+      "Scale_Back_L4",
+      "Scale_Back_L5",
+      "Scale_Back_L6",
+      "Scale_Back_L7",
+      "Scale_Back_L8",
+      "Scale_Back_L9",
+      "Scale_Back_L10"
+    ],
+    "Scale_Belly_L": [
+      "Scale_Belly_L0",
+      "Scale_Belly_L1",
+      "Scale_Belly_L2"
+    ],
+    "Scale_Temple_R": [
+      "Scale_Temple_R0",
+      "Scale_Temple_R1",
+      "Scale_Temple_R2",
+      "Scale_Temple_R3",
+      "Scale_Temple_R4",
+      "Scale_Temple_R5",
+      "Scale_Temple_R6",
+      "Scale_Temple_R7",
+      "Scale_Temple_R8",
+      "Scale_Temple_R9",
+      "Scale_Temple_R10",
+      "Scale_Temple_R11",
+      "Scale_Temple_R12",
+      "Scale_Temple_R13"
+    ],
+    "Scale_Back_R": [
+      "Scale_Back_R0",
+      "Scale_Back_R1",
+      "Scale_Back_R2",
+      "Scale_Back_R3",
+      "Scale_Back_R4",
+      "Scale_Back_R5",
+      "Scale_Back_R6",
+      "Scale_Back_R7",
+      "Scale_Back_R8",
+      "Scale_Back_R9",
+      "Scale_Back_R10"
+    ],
+    "Scale_Belly_R": [
+      "Scale_Belly_R0",
+      "Scale_Belly_R1",
+      "Scale_Belly_R2"
+    ]
+  },
   "boundsMetersXYZ": [
     [
       -0.6694127917289734,
@@ -772,16 +903,16 @@
       0.5592082142829895
     ],
     [
-      0.08823558688163757,
+      0.08829817175865173,
       1.822923183441162
     ]
   ],
   "source": "art-source/blender/characters/brisk/brisk-driver.blend",
-  "sourceSha256": "1d35ef6f7f7d1ebe94dd0be01f1a1fac31477573e0bf723de6bfa4776d0fce2f",
+  "sourceSha256": "c985a2d10b73a8f2e3a86f8083a8f512a451096a80e15a8df697be9fc4648d71",
   "output": "art-source/blender/characters/brisk/exports/brisk-driver.fbx",
-  "outputSha256": "ee68020ee752d03350b90f6da9a92f74261caa6a059a0de756514d2fa8b554da",
+  "outputSha256": "f36d36ea675b46cb39c7b098a17ffbe7418cf03eedb35e8a4c7f168da2c7249d",
   "glb": "art-source/blender/characters/brisk/exports/brisk-driver.glb",
-  "glbSha256": "74e357c163cae4cf72f9e259a6825346b23f53f6f049a26e34c96c83f2b72629",
+  "glbSha256": "09ed5ccff86ab85946195b9113cbd0d76ead1d44d18854cea79e6f137a869e61",
   "blenderVersion": "5.2.1 LTS",
   "units": "meters",
   "forward": "-Y",

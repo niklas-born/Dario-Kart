@@ -1,5 +1,7 @@
 # Grit — Dune Hopper
 
+**Animated turns:** [open the turn rig](grit-dune-hopper-turns.blend), [watch Riff and Grit](../turn-animation-preview.mp4), or read the [controls and Unity integration](../TURN-ANIMATION.md). The new version adds steering-linked hands, arm IK, body lean, gaze and radius-based tire roll.
+
 Open **[grit-dune-hopper.blend](grit-dune-hopper.blend)** for the detailed vehicle with the accepted Grit driver seated inside. The driver, seat, steering wheel, road wheels, and carried spare have independent transform groups.
 
 The buggy follows the [approved concept](../../../concepts/racers/round-02/02-grit-v2.png): graphite tube frame, triangular yellow panels, a square headlamp, steel skid plates with three open slots, knobby tires with orange rims, exposed orange coilovers, a rear engine, twin hollow exhaust tips, two red tail lamps, and a strapped spare. Geometry is constructed in Blender; review images are actual mesh renders.

@@ -1,5 +1,7 @@
 # Riff — Streamliner
 
+**Animated turns:** [open the turn rig](riff-streamliner-turns.blend), [watch Riff and Grit](../turn-animation-preview.mp4), or read the [controls and Unity integration](../TURN-ANIMATION.md). The new version adds steering-linked hands, arm IK, body lean, gaze and radius-based tire roll.
+
 Open **[riff-streamliner.blend](riff-streamliner.blend)** for the complete car with Riff seated at the wheel.
 
 For separate parts, open **[Riff only](../../characters/riff/riff-driver-only.blend)** or **[seat only](streamliner-seat.blend)**. These clean files contain only their named part and retain the assembled coordinates, so they line up when appended together. Riff keeps his seated pose, skeleton, idle, and blinks. [Separated preview](review/final/driver-and-seat-separated.png).

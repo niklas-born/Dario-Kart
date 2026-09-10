@@ -1,0 +1,15 @@
+{
+    "roadSamples": 3240,
+    "roadMisses": 0,
+    "completedLaps": 3,
+    "recoveries": 0,
+    "airborneSteps": 0,
+    "seconds": 352.944580078125,
+    "maxLateralMeters": 0.44888070225715639,
+    "lapTimes": [
+        118.09219360351563,
+        117.4613037109375,
+        117.39108276367188
+    ],
+    "lapRulesPass": true
+}

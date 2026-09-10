@@ -1,0 +1,175 @@
+{
+  "item": "route-painter",
+  "revision": "02",
+  "source": "art-source/blender/items/route-painter/route-painter.blend",
+  "triangles": 14874,
+  "meshObjects": 9,
+  "editableSourceObjects": 20,
+  "boundsMeters": [
+    [
+      -0.5286285877227783,
+      -0.2554090619087219,
+      0.18641187250614166
+    ],
+    [
+      0.5499998927116394,
+      0.252292275428772,
+      1.213930606842041
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Painter | ivory can enamel": {
+      "Base Color": [
+        0.8549926280975342,
+        0.8227857351303101,
+        0.7083757519721985,
+        1.0
+      ],
+      "Metallic": 0.1599999964237213,
+      "Roughness": 0.4000000059604645,
+      "Emission Color": [
+        0.8549926280975342,
+        0.8227857351303101,
+        0.7083757519721985,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | satin aluminum": {
+      "Base Color": [
+        0.5583403706550598,
+        0.5840784311294556,
+        0.6307571530342102,
+        1.0
+      ],
+      "Metallic": 0.6800000071525574,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.5583403706550598,
+        0.5840784311294556,
+        0.6307571530342102,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | crimp recess": {
+      "Base Color": [
+        0.09084171056747437,
+        0.13013647496700287,
+        0.18116424977779388,
+        1.0
+      ],
+      "Metallic": 0.6000000238418579,
+      "Roughness": 0.36000001430511475,
+      "Emission Color": [
+        0.09084171056747437,
+        0.13013647496700287,
+        0.18116424977779388,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | blue spray button": {
+      "Base Color": [
+        0.0009105809731408954,
+        0.3277781009674072,
+        0.7912979125976562,
+        1.0
+      ],
+      "Metallic": 0.25,
+      "Roughness": 0.27000001072883606,
+      "Emission Color": [
+        0.0009105809731408954,
+        0.3277781009674072,
+        0.7912979125976562,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | pale road dashes": {
+      "Base Color": [
+        0.6444796919822693,
+        0.9215818643569946,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.10000000149011612,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.6444796919822693,
+        0.9215818643569946,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.20000000298023224,
+      "Transmission Weight": 0.0
+    },
+    "Painter | nozzle opening": {
+      "Base Color": [
+        0.002428215928375721,
+        0.01850022003054619,
+        0.04817182570695877,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.44999998807907104,
+      "Emission Color": [
+        0.002428215928375721,
+        0.01850022003054619,
+        0.04817182570695877,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | glossy blue paint": {
+      "Base Color": [
+        0.002428215928375721,
+        0.20507873594760895,
+        0.4125426113605499,
+        1.0
+      ],
+      "Metallic": 0.25,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.002428215928375721,
+        0.20507873594760895,
+        0.4125426113605499,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Painter | cyan fresh paint": {
+      "Base Color": [
+        0.007499032188206911,
+        0.7083757519721985,
+        1.0,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Emission Color": [
+        0.007499032188206911,
+        0.7083757519721985,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 1.2000000476837158,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "route-painter.fbx": "dc638cb044cd4ae46e4aa28f1d2f583765e889acb84d5b33434d2656bd7b80f7",
+    "route-painter.glb": "8ae17db6bb8e0a2b368447224d3608ba4b2411101bff8ec67a3efb4faf372a98"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

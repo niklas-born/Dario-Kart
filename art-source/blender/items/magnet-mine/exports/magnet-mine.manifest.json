@@ -1,0 +1,211 @@
+{
+  "item": "magnet-mine",
+  "revision": "02",
+  "source": "art-source/blender/items/magnet-mine/magnet-mine.blend",
+  "triangles": 10548,
+  "meshObjects": 10,
+  "editableSourceObjects": 29,
+  "boundsMeters": [
+    [
+      -0.503882884979248,
+      -0.4675000011920929,
+      0.06999999284744263
+    ],
+    [
+      0.503882884979248,
+      0.4300000071525574,
+      1.0358242988586426
+    ]
+  ],
+  "units": "meters",
+  "sourceForward": "-Y",
+  "sourceUp": "Z",
+  "exchangeUp": "Y",
+  "materials": {
+    "Base | charcoal rubber": {
+      "Base Color": [
+        0.021219009533524513,
+        0.022173885256052017,
+        0.03433980792760849,
+        1.0
+      ],
+      "Metallic": 0.15000000596046448,
+      "Roughness": 0.41999998688697815,
+      "Emission Color": [
+        0.021219009533524513,
+        0.022173885256052017,
+        0.03433980792760849,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Base | safety yellow": {
+      "Base Color": [
+        1.0,
+        0.5088813304901123,
+        0.002428215928375721,
+        1.0
+      ],
+      "Metallic": 0.25,
+      "Roughness": 0.3199999928474426,
+      "Emission Color": [
+        1.0,
+        0.5088813304901123,
+        0.002428215928375721,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Base | rim steel": {
+      "Base Color": [
+        0.09530746936798096,
+        0.08437620848417282,
+        0.12477181851863861,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.09530746936798096,
+        0.08437620848417282,
+        0.12477181851863861,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | lacquer red": {
+      "Base Color": [
+        0.7835378050804138,
+        0.012286487966775894,
+        0.03189603239297867,
+        1.0
+      ],
+      "Metallic": 0.2199999988079071,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.7835378050804138,
+        0.012286487966775894,
+        0.03189603239297867,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | brushed pole caps": {
+      "Base Color": [
+        0.6104955673217773,
+        0.6038273572921753,
+        0.6795424818992615,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.27000001072883606,
+      "Emission Color": [
+        0.6104955673217773,
+        0.6038273572921753,
+        0.6795424818992615,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | red warning glass": {
+      "Base Color": [
+        0.9646862745285034,
+        0.005181516520678997,
+        0.02955683507025242,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.17000000178813934,
+      "Emission Color": [
+        0.9646862745285034,
+        0.005181516520678997,
+        0.02955683507025242,
+        1.0
+      ],
+      "Emission Strength": 0.25,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | warning filament": {
+      "Base Color": [
+        1.0,
+        0.7011018991470337,
+        0.015208514407277107,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.20000000298023224,
+      "Emission Color": [
+        1.0,
+        0.7011018991470337,
+        0.015208514407277107,
+        1.0
+      ],
+      "Emission Strength": 5.0,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | bolt bronze": {
+      "Base Color": [
+        0.41788506507873535,
+        0.19806931912899017,
+        0.016807375475764275,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.41788506507873535,
+        0.19806931912899017,
+        0.016807375475764275,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "Magnet | bolt bronze.001": {
+      "Base Color": [
+        0.41788506507873535,
+        0.19806931912899017,
+        0.016807375475764275,
+        1.0
+      ],
+      "Metallic": 0.6499999761581421,
+      "Roughness": 0.30000001192092896,
+      "Emission Color": [
+        0.41788506507873535,
+        0.19806931912899017,
+        0.016807375475764275,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Transmission Weight": 0.0
+    },
+    "VFX | pink magnetic sparks": {
+      "Base Color": [
+        1.0,
+        0.7758222222328186,
+        0.8549926280975342,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.25,
+      "Emission Color": [
+        1.0,
+        0.7758222222328186,
+        0.8549926280975342,
+        1.0
+      ],
+      "Emission Strength": 3.0,
+      "Transmission Weight": 0.0
+    }
+  },
+  "sha256": {
+    "magnet-mine.fbx": "e7372d7ff454216940a91c6c71b1fab9128ea43e21a9098d65e2b67f3f6d121b",
+    "magnet-mine.glb": "e1c07b34f7d011e4e6ca6d708f7c6a84aa7e76ba9bb7b8daa368d234a8a5a7fa"
+  },
+  "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
+}

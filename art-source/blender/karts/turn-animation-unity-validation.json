@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "unityVersion": "6000.3.23f1",
+  "checks": [
+    "left and right steering",
+    "right input turns tires toward Unity +X",
+    "driver head turn",
+    "wrist contact within 4 mm",
+    "wheel centers within 2 mm",
+    "rear wheels do not steer",
+    "forward and reverse rolling",
+    "return to neutral"
+  ],
+  "validationScope": "Imported prefab pose sampling and Unity render captures; full driving lap and standalone build not run.",
+  "prefabs": {
+    "riff-streamliner": {
+      "path": "game/Assets/_DarioKart/Resources/KartTurns/riff-streamliner.prefab",
+      "sha256": "8460b09052d7314963e6cb21ea35ff6406b88d18e878c232d098a335f1aa353b",
+      "fbxSha256": "0e8a2656aab062daa07d76ac5337c15a22cdfcc425866d5b122a1bfe4eea35c2"
+    },
+    "grit-dune-hopper": {
+      "path": "game/Assets/_DarioKart/Resources/KartTurns/grit-dune-hopper.prefab",
+      "sha256": "259656189181e34f3e022a133800d2cada153ac636938a41c313ec58f9715773",
+      "fbxSha256": "b8a9829c4f3d589ee7bf16ff1c0f6ea8455829dd7c056f9243d2bc38c6f30b42"
+    }
+  }
+}
