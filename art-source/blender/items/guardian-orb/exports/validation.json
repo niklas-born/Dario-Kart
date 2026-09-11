@@ -1,0 +1,10 @@
+{
+  "item": "guardian-orb",
+  "passed": true,
+  "triangles": 30832,
+  "meshObjects": 9,
+  "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+  "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+  "provenance": "Source, FBX, and GLB hashes verified",
+  "engineTested": false
+}

@@ -9,18 +9,23 @@
     [
       -0.5286285877227783,
       -0.2554090619087219,
-      0.18641187250614166
+      -0.4935881495475769
     ],
     [
       0.5499998927116394,
       0.252292275428772,
-      1.213930606842041
+      0.5339305996894836
     ]
   ],
   "units": "meters",
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.6800000071525574
+  ],
   "materials": {
     "Painter | ivory can enamel": {
       "Base Color": [
@@ -168,8 +173,9 @@
     }
   },
   "sha256": {
-    "route-painter.fbx": "dc638cb044cd4ae46e4aa28f1d2f583765e889acb84d5b33434d2656bd7b80f7",
-    "route-painter.glb": "8ae17db6bb8e0a2b368447224d3608ba4b2411101bff8ec67a3efb4faf372a98"
+    "route-painter.blend": "445aa4afaa0e19cb04afe6ba61a18d0645a1b8d528c13926b7bab5dc3ab1c9e7",
+    "route-painter.fbx": "6f035fe920706b010dd3f7f8f7950e69f71409c6f2f09bfef74e44e348fb7b2e",
+    "route-painter.glb": "08ee70eb5fc4c468e4ab76ecde6e53b0b1a6b64fad8a4e91c8a3d5050f2f569e"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

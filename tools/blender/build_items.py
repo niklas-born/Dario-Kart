@@ -24,6 +24,7 @@ P.add_argument('--samples', type=int, default=32)
 P.add_argument('--views', default='hero')
 P.add_argument('--final', action='store_true')
 P.add_argument('--package-only', action='store_true')
+P.add_argument('--review-only', action='store_true')
 A = P.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 OUT = ROOT/'art-source/blender/items'/A.item
 REVIEW = OUT/'review'/('v'+A.revision)
@@ -35,6 +36,9 @@ for c in list(bpy.data.collections): bpy.data.collections.remove(c)
 S = bpy.context.scene
 S.unit_settings.system = 'METRIC'
 S.unit_settings.scale_length = 1
+S.view_settings.view_transform='Standard'
+S.view_settings.look='None'
+S.view_settings.exposure=-1
 
 def coll(name):
     c=bpy.data.collections.new(name); S.collection.children.link(c); return c
@@ -548,7 +552,7 @@ def curved_arrow(name,start,end,z0,z1,r,m):
     f.extend([tuple(reversed(range(4))),tuple((n-1)*4+k for k in range(4))])
     bevel(mesh(name+' curved ribbon',verts,f,m),.01,3)
     center=Vector((r*cos(end),r*sin(end),z1))
-    tangent=Vector((-sin(end),cos(end),0));radial=Vector((cos(end),sin(end),0))
+    tangent=Vector((-sin(end),cos(end),0))*(1 if end>start else -1);radial=Vector((cos(end),sin(end),0))
     shape=[(-.016,-h/2),(.027,-h/2),(.027,-.147),(.228,0),(.027,.147),(.027,h/2),(-.016,h/2)]
     verts=[center+tangent*s+Vector((0,0,z))+radial*d for d in [-.023,.023] for s,z in shape]
     n=len(shape);f=[tuple(reversed(range(n))),tuple(range(n,2*n))]+[(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)]
@@ -557,9 +561,9 @@ def curved_arrow(name,start,end,z0,z1,r,m):
 def beacon():
     red=mat('Swap | coral red arrow','F62742',.26,.23)
     blue=mat('Swap | cobalt blue arrow','2859E8',.25,.27)
-    crystal=[mat('Swap | crystal facet '+str(i),h,.2,.15,.3,.25) for i,h in enumerate(['9DF8FF','48BBFF','347AEC','AA9CFF','E0E8FF','5EDFFB'])]
+    crystal=[mat('Swap | crystal facet '+str(i),h,.2,.15,.12,.20) for i,h in enumerate(['55DAFF','238CFF','2356DB','816AEB','CAE9FF','2ECAEF'])]
     pink=mat('VFX | pink crystal shards','FF55C9',.23,0,1.3)
-    levels=[(1.39,0),(1.19,.104),(1.025,.163),(.835,.092),(.68,0)]
+    levels=[(1.39,0),(1.19,.104),(1.025,.163),(.835,.092),(.68,0)] if int(A.revision)!=2 else [(1.39,0),(1.19,.104),(1.025,.163),(.73,.085),(.39,0)]
     verts=[];n=6
     for z,r in levels:
         for i in range(n):
@@ -574,8 +578,13 @@ def beacon():
     o=mesh('Tall faceted swap crystal',verts,f,None,smooth=False)
     for m in crystal:o.data.materials.append(m)
     for p in o.data.polygons:p.material_index=(p.index%6+(p.index//6)%2)%6
+    if int(A.revision)>2:
+        # The concept's small lower spectral point is distinct from its broad upper diamond.
+        tail=mesh('Lower spectral crystal point',[(0,0,.79),(-.07,0,.52),(0,-.055,.52),(.07,0,.52),(0,.055,.52),(0,0,.35)],
+                  [(0,1,2),(0,2,3),(0,3,4),(0,4,1),(5,2,1),(5,3,2),(5,4,3),(5,1,4)],crystal[3],smooth=False)
     curved_arrow('Red exchange',.56*pi,1.84*pi,.86,.71,.365,red)
-    curved_arrow('Blue exchange',-.36*pi,.73*pi,.72,.53,.405,blue)
+    if int(A.revision)==1:curved_arrow('Blue exchange',-.36*pi,.73*pi,.72,.53,.405,blue)
+    else:curved_arrow('Blue exchange',.65*pi,-.50*pi,.73,.43,.405,blue)
     for i,(x,z,s) in enumerate([(-.45,1.27,.027),(.38,1.25,.036),(-.44,.53,.04),(.45,.38,.027)]):
         o=ico('Pink suspended crystal fleck %d'%i,(x,.015,z),1,pink,FX,1)
         o.scale=(s*.4,s*.32,s);o.rotation_euler[1]=.55
@@ -645,8 +654,9 @@ def studio(target,extent):
     S.render.engine='CYCLES';S.cycles.samples=A.samples;S.cycles.use_denoising=True
     S.render.resolution_x=A.resolution;S.render.resolution_y=A.resolution;S.render.resolution_percentage=100
     S.world.color=(.18,.18,.18)
-    S.view_settings.view_transform='AgX'
-    S.view_settings.look='AgX - Medium High Contrast'
+    S.view_settings.view_transform='Standard'
+    S.view_settings.look='None'
+    S.view_settings.exposure=-1
     S.render.image_settings.file_format='PNG'
     floor=mat('Studio | plum','80506C',.72)
     bpy.ops.mesh.primitive_plane_add(size=200,location=(0,0,-.15));finish(bpy.context.object,'Studio floor',floor,STUDIO)
@@ -662,6 +672,39 @@ def studio(target,extent):
     layers=tree.nodes.new('CompositorNodeRLayers');glow=tree.nodes.new('CompositorNodeGlare');glow.inputs['Type'].default_value='Fog Glow';glow.inputs['Quality'].default_value='High';glow.inputs['Strength'].default_value=.5;glow.inputs['Threshold'].default_value=.65
     output=tree.nodes.new('NodeGroupOutput');tree.links.new(layers.outputs['Image'],glow.inputs['Image']);tree.links.new(glow.outputs['Image'],output.inputs['Image'])
     return cam
+
+def render_review(target,extent,destination):
+    cam=studio(target,extent)
+    destination.mkdir(parents=True,exist_ok=True)
+    for view in A.views.split(','):
+        delta={'hero':(2.7,-6,2.5),'front':(0,-6,.7),'side':(6,0,1.1),'rear':(2,6,2)}[view]
+        cam.location=Vector(target)+Vector(delta);aim(cam,target)
+        S.render.filepath=str(destination/(view+'.png'));bpy.ops.render.render(write_still=True)
+    ref=bpy.data.images.load(str(ROOT/'art-source/concepts/items/item-concepts.png'),check_existing=True);ref.pack()
+    # Open review files at their useful hero view rather than the last diagnostic angle.
+    cam.location=Vector(target)+Vector((2.7,-6,2.5));aim(cam,target)
+    bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(A.item+'-review.blend')))
+
+if A.review_only:
+    bpy.ops.wm.open_mainfile(filepath=str(OUT/(A.item+'.blend')))
+    S=bpy.context.scene;BODY=bpy.data.collections['EXPORT'];FX=bpy.data.collections['EFFECTS'];STUDIO=bpy.data.collections['STUDIO']
+    S.view_settings.view_transform='Standard';S.view_settings.look='None';S.view_settings.exposure=-1
+    framing={'comet-core':((0,0,.9),2.2),'snaptrap':((0,0,.68),1.7),'turbo-battery':((0,0,.69),1.65),
+             'guardian-orb':((0,-.01,.79),1.58),'magnet-mine':((0,0,.55),1.4),'phase-gear':((0,0,.76),1.43),
+             'route-painter':((0,0,.68),1.58),'swap-beacon':((0,0,.87),1.6)}
+    target,extent=framing[A.item]
+    for screen in bpy.data.screens:
+        for area in screen.areas:
+            if area.type=='VIEW_3D':
+                space=area.spaces.active;space.region_3d.view_location=target;space.region_3d.view_distance=extent*1.4
+                space.region_3d.view_rotation=Vector((2.7,-6,2.5)).to_track_quat('Z','Y');space.shading.type='MATERIAL'
+    bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(A.item+'.blend')))
+    manifest=OUT/'exports'/(A.item+'.manifest.json')
+    data=json.loads(manifest.read_text());data['sha256'][A.item+'.blend']=hashlib.sha256((OUT/(A.item+'.blend')).read_bytes()).hexdigest()
+    manifest.write_text(json.dumps(data,indent=2)+'\n')
+    render_review(target,extent,OUT/'review/final')
+    print('ITEM_REVIEW_COMPLETE',A.item)
+    sys.exit(0)
 
 if A.package_only:
     bpy.ops.wm.open_mainfile(filepath=str(OUT/(A.item+'.blend')))
@@ -691,12 +734,5 @@ bpy.ops.wm.save_as_mainfile(filepath=str(source))
 if A.final:
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(A.item+'.blend')))
     package()
-cam=studio(target,extent)
-for view in A.views.split(','):
-    delta={'hero':(2.7,-6,2.5),'front':(0,-6,.7),'side':(6,0,1.1),'rear':(2,6,2)}[view]
-    cam.location=Vector(target)+Vector(delta);aim(cam,target)
-    S.render.filepath=str(REVIEW/(view+'.png'));bpy.ops.render.render(write_still=True)
-# Pack the original concept for inspection in the Blender review file.
-ref=bpy.data.images.load(str(ROOT/'art-source/concepts/items/item-concepts.png'),check_existing=True);ref.pack()
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(A.item+'-review.blend')))
+render_review(target,extent,REVIEW)
 print('ITEM_BUILD_COMPLETE',A.item,A.revision)

@@ -9,18 +9,23 @@
     [
       -0.5253509283065796,
       -0.3004301190376282,
-      0.11163424700498581
+      -0.5783657431602478
     ],
     [
       0.5253509283065796,
       0.30050960183143616,
-      1.2336987257003784
+      0.5436987280845642
     ]
   ],
   "units": "meters",
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.6899999976158142
+  ],
   "materials": {
     "Battery | lime energy cell": {
       "Base Color": [
@@ -186,8 +191,9 @@
     }
   },
   "sha256": {
-    "turbo-battery.fbx": "a90e9b95857055fcea7601dcc66f755ebdfddcd2d75e0ee79884a253a956cac2",
-    "turbo-battery.glb": "74e366f8ae9b79964cb05b8e731a7577f188eab748f787c6bb8f7c3f8652dd69"
+    "turbo-battery.blend": "7d78815ac1c82f7554cae76f1acd6eb8fef4b3a6fd1d6cb5898a1046d60b5aee",
+    "turbo-battery.fbx": "5c2327d1aa8f866205ceeb58cdc1856468b809d1754481f29f557e10f7b230d9",
+    "turbo-battery.glb": "98ab533b532e4a4abea806e03ac11905af897cff0becc49766f51d5b10f2d6cd"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

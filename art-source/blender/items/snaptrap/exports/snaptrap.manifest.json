@@ -2,7 +2,7 @@
   "item": "snaptrap",
   "revision": "03",
   "source": "art-source/blender/items/snaptrap/snaptrap.blend",
-  "triangles": 24128,
+  "triangles": 24088,
   "meshObjects": 13,
   "editableSourceObjects": 50,
   "boundsMeters": [
@@ -21,6 +21,11 @@
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.0
+  ],
   "materials": {
     "Base | charcoal rubber": {
       "Base Color": [
@@ -258,8 +263,9 @@
     }
   },
   "sha256": {
-    "snaptrap.fbx": "516d19c2cb63ecfa10294020764ed691aa442efa1735822412ad80599aab9bca",
-    "snaptrap.glb": "b4fb03ad2dd097079a15b9b5d0ab667c5a76c24a5991e7b184edf7393e3e4d8d"
+    "snaptrap.blend": "32a8d2bf9dfdbeb10cf73f2e0e34d69af21c92f7a1e43834db47dafcb87d32a7",
+    "snaptrap.fbx": "b01cdee507b931669065247c31f855579f916e23fa24807bbb01936fb74ec846",
+    "snaptrap.glb": "683a9c3336ee84f9d5a535f127a80d5b9a76e8ed0db25278419a93723fc1eba7"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

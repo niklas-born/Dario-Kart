@@ -1,0 +1,82 @@
+[
+  {
+    "item": "comet-core",
+    "passed": true,
+    "triangles": 15984,
+    "meshObjects": 14,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "guardian-orb",
+    "passed": true,
+    "triangles": 30832,
+    "meshObjects": 9,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "magnet-mine",
+    "passed": true,
+    "triangles": 10484,
+    "meshObjects": 10,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "phase-gear",
+    "passed": true,
+    "triangles": 7664,
+    "meshObjects": 8,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "route-painter",
+    "passed": true,
+    "triangles": 14874,
+    "meshObjects": 9,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "snaptrap",
+    "passed": true,
+    "triangles": 24088,
+    "meshObjects": 13,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "swap-beacon",
+    "passed": true,
+    "triangles": 5196,
+    "meshObjects": 5,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  },
+  {
+    "item": "turbo-battery",
+    "passed": true,
+    "triangles": 14724,
+    "meshObjects": 10,
+    "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+    "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+    "provenance": "Source, FBX, and GLB hashes verified",
+    "engineTested": false
+  }
+]

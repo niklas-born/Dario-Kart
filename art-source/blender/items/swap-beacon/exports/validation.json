@@ -1,0 +1,10 @@
+{
+  "item": "swap-beacon",
+  "passed": true,
+  "triangles": 5196,
+  "meshObjects": 5,
+  "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+  "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+  "provenance": "Source, FBX, and GLB hashes verified",
+  "engineTested": false
+}

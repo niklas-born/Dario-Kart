@@ -1,0 +1,10 @@
+{
+  "item": "route-painter",
+  "passed": true,
+  "triangles": 14874,
+  "meshObjects": 9,
+  "fbxRoundTrip": "UVs, nondegenerate geometry, counts, scale, studio exclusion",
+  "glbChecks": "Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation",
+  "provenance": "Source, FBX, and GLB hashes verified",
+  "engineTested": false
+}

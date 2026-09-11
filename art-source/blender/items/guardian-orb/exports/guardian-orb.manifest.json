@@ -2,25 +2,30 @@
   "item": "guardian-orb",
   "revision": "03",
   "source": "art-source/blender/items/guardian-orb/guardian-orb.blend",
-  "triangles": 31080,
+  "triangles": 30832,
   "meshObjects": 9,
   "editableSourceObjects": 86,
   "boundsMeters": [
     [
       -0.5589073896408081,
       -0.562000036239624,
-      0.2271372526884079
+      -0.562862753868103
     ],
     [
       0.5384539365768433,
       0.44899603724479675,
-      1.3346490859985352
+      0.544649064540863
     ]
   ],
   "units": "meters",
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.7900000214576721
+  ],
   "materials": {
     "Orb | blue recessed joints": {
       "Base Color": [
@@ -168,8 +173,9 @@
     }
   },
   "sha256": {
-    "guardian-orb.fbx": "deaf8a343ac6d52d5b43177febb21a627a7c375030d0e0af811bec9ed4728be8",
-    "guardian-orb.glb": "3838c1c2fe8f0e3096ac1168f552233b5986b6c83ebf0d7042ce3707fe4dc3ba"
+    "guardian-orb.blend": "efe89821ad557ac95bc231ff9de082c3303a2f9c3106ce0fec7a3e8e05172198",
+    "guardian-orb.fbx": "139dfb5327c1a4bfa53ba4bf1c9d45000cfbd8278c61775d09a5534410275282",
+    "guardian-orb.glb": "db8466dcecbedbb19a87933c9a5217d5791f9ebde09cd1f8bd9d4f78848f1ff5"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

@@ -2,7 +2,7 @@
   "item": "magnet-mine",
   "revision": "02",
   "source": "art-source/blender/items/magnet-mine/magnet-mine.blend",
-  "triangles": 10548,
+  "triangles": 10484,
   "meshObjects": 10,
   "editableSourceObjects": 29,
   "boundsMeters": [
@@ -21,6 +21,11 @@
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.0
+  ],
   "materials": {
     "Base | charcoal rubber": {
       "Base Color": [
@@ -204,8 +209,9 @@
     }
   },
   "sha256": {
-    "magnet-mine.fbx": "e7372d7ff454216940a91c6c71b1fab9128ea43e21a9098d65e2b67f3f6d121b",
-    "magnet-mine.glb": "e1c07b34f7d011e4e6ca6d708f7c6a84aa7e76ba9bb7b8daa368d234a8a5a7fa"
+    "magnet-mine.blend": "7ba7b4c7239ebfdd832ee8803d6f2d1809066b4224973fec293ff7954d83cc0b",
+    "magnet-mine.fbx": "725f9440472f42a909eec98f829c6536698317dc732c6f96f8f2b3626117ffef",
+    "magnet-mine.glb": "c3ce79c3e828d08adb0d7cb7139b4727eb772b00ceabf8d15e3f3f51190c63e8"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

@@ -41,6 +41,10 @@ First 3D driver: [Riff's Blender model, concept comparisons, and poseable export
 
 Second 3D driver: [Grit's separate Blender model, review renders, and rigged exports](art-source/blender/characters/grit/README.md).
 
+Third 3D driver: [Brisk's separate rigged model](art-source/blender/characters/brisk/README.md), now paired with the [Frost Runner ice kart](art-source/blender/karts/frost-runner/README.md). Its faceted body, steering front covers, treaded wheels and twin fan rotors remain separately editable; Brisk and his seat move independently.
+
+Item art: [all eight item models, concept comparisons, and validated FBX/GLB packages](art-source/blender/items/README.md). Each has an editable Blender source and preserved iteration renders; Unity materials, prefabs, animation, and gameplay integration remain separate work.
+
 Riff now has his [Streamliner kart](art-source/blender/karts/streamliner/README.md), with a fitted cockpit, exposed suspension, turning and spinning wheels, and a combined Blender scene.
 
 Grit now has his [Dune Hopper buggy](art-source/blender/karts/dune-hopper/README.md), with a tubular frame, knobby tires, orange coilovers, exposed rear engine, and strapped spare. Driver and seat remain separate in the combined scene and exports.

@@ -9,18 +9,23 @@
     [
       -0.8685911297798157,
       -0.5298677086830139,
-      -0.06456601619720459
+      -0.9645659923553467
     ],
     [
       0.9551746845245361,
       0.5483018755912781,
-      1.8747789859771729
+      0.9747790098190308
     ]
   ],
   "units": "meters",
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.8999999761581421
+  ],
   "materials": {
     "Core | golden molten fissures": {
       "Base Color": [
@@ -186,8 +191,9 @@
     }
   },
   "sha256": {
-    "comet-core.fbx": "2e80c2e3f321621268a2575857b533f5e79d6105bb855cddfbec51cbfaf60087",
-    "comet-core.glb": "0cb1a376a1861d55e54c2a4cd13b8ba622a891d7421a5cdb5e3dfe98cdfbcab8"
+    "comet-core.blend": "c9e1780c5fae51d60f04aeb0ad835239dab272a0cbdefe02082406478d5287e5",
+    "comet-core.fbx": "2098064f2ed9304c24d77e144de80411f3ff26e1cae95109a2881e64866b34c5",
+    "comet-core.glb": "dce6f6d5b0bc852d3554047a925a2712e382f1c9fe3ccfd64d0e3926a68ceb8e"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }

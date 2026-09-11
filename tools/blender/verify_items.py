@@ -1,6 +1,7 @@
 """Fresh FBX import and GLB structural verification for the item collection."""
 import bpy
 import json
+import hashlib
 from pathlib import Path
 import struct
 from mathutils import Vector
@@ -12,6 +13,9 @@ for folder in sorted((ROOT/'art-source/blender/items').iterdir()):
     path=folder/'exports'/(folder.name+'.fbx')
     if not path.exists():continue
     manifest=json.loads(path.with_suffix('.manifest.json').read_text())
+    for filename,digest in manifest['sha256'].items():
+        asset=folder/filename if filename.endswith('.blend') else folder/'exports'/filename
+        assert hashlib.sha256(asset.read_bytes()).hexdigest()==digest,('Stale provenance',asset)
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.ops.import_scene.fbx(filepath=str(path))
     objects=list(bpy.context.scene.objects)
@@ -34,9 +38,12 @@ for folder in sorted((ROOT/'art-source/blender/items').iterdir()):
     gltf=json.loads(data[20:20+size]);assert kind==0x4e4f534a
     assert not gltf.get('cameras') and not gltf.get('animations')
     assert all('TEXCOORD_0' in p['attributes'] and 'NORMAL' in p['attributes'] for m in gltf['meshes'] for p in m['primitives'])
+    glb_triangles=sum(gltf['accessors'][p['indices']]['count']//3 for m in gltf['meshes'] for p in m['primitives'])
+    assert glb_triangles==triangles,(folder.name,glb_triangles,triangles)
     result={'item':folder.name,'passed':True,'triangles':triangles,'meshObjects':len(meshes),
             'fbxRoundTrip':'UVs, nondegenerate geometry, counts, scale, studio exclusion',
-            'glbChecks':'Valid container, normals, UVs, no cameras or unexpected animation',
+            'glbChecks':'Valid container, matching triangle count, normals, UVs, no cameras or unexpected animation',
+            'provenance':'Source, FBX, and GLB hashes verified',
             'engineTested':False}
     (folder/'exports/validation.json').write_text(json.dumps(result,indent=2)+'\n')
     results.append(result)

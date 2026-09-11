@@ -2,6 +2,33 @@
   "schemaVersion": 1,
   "assets": [
     {
+      "id": "frost-runner",
+      "source": "art-source/blender/karts/frost-runner/brisk-frost-runner.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender vehicle geometry fitted around the accepted independent Brisk driver",
+      "reference": "art-source/concepts/racers/round-02/03-brisk-v2.png",
+      "driver": "art-source/blender/characters/brisk/brisk-driver.blend",
+      "builder": "tools/blender/build_frost_runner.py",
+      "preparation": "tools/blender/finish_frost_runner.py",
+      "validation": "tools/blender/verify_frost_runner.py",
+      "runtimeModel": "game/Assets/_DarioKart/Art/Models/Karts/frost-runner.fbx",
+      "purpose": "Faceted ice kart with independent seat, steering fairings, road wheels, twin fan rotors and combined Brisk preview",
+      "review": "art-source/blender/karts/frost-runner/README.md"
+    },
+    {
+      "id": "brisk-driver",
+      "source": "art-source/blender/characters/brisk/brisk-driver.blend",
+      "sculpt": "art-source/blender/characters/brisk/brisk-driver-v02.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender three-eyed ice monster modeled against Brisk's concept sheets",
+      "reference": "art-source/concepts/racers/round-02/03-brisk-v2.png",
+      "builder": "tools/blender/build_brisk.py",
+      "preparation": "tools/blender/prepare_brisk.py",
+      "validation": "tools/blender/verify_brisk_exports.py",
+      "purpose": "Third seated driver with a 14-bone rig, three blink targets, idle animation and independent cockpit fitting guides",
+      "review": "art-source/blender/characters/brisk/README.md"
+    },
+    {
       "id": "harbor-prototype-reference",
       "source": "/Users/niklasborn/Downloads/mario_kart_8_-_toad_harbor.glb",
       "author": "H,yoshi (Sketchfab uploader, as recorded in GLB metadata)",
@@ -263,6 +290,94 @@
       "reference": "art-source/references/monsters/remaining-four-composite.png",
       "prompts": "art-source/concepts/racers/round-03/prompts.json",
       "purpose": "Character and vehicle modeling concept; not a 3D asset"
+    },
+    {
+      "id": "item-comet-core",
+      "source": "art-source/blender/items/comet-core/comet-core.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Comet Core static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/comet-core/README.md"
+    },
+    {
+      "id": "item-snaptrap",
+      "source": "art-source/blender/items/snaptrap/snaptrap.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Snaptrap static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/snaptrap/README.md"
+    },
+    {
+      "id": "item-turbo-battery",
+      "source": "art-source/blender/items/turbo-battery/turbo-battery.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Turbo Battery static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/turbo-battery/README.md"
+    },
+    {
+      "id": "item-guardian-orb",
+      "source": "art-source/blender/items/guardian-orb/guardian-orb.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Guardian Orb static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/guardian-orb/README.md"
+    },
+    {
+      "id": "item-magnet-mine",
+      "source": "art-source/blender/items/magnet-mine/magnet-mine.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Magnet Mine static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/magnet-mine/README.md"
+    },
+    {
+      "id": "item-phase-gear",
+      "source": "art-source/blender/items/phase-gear/phase-gear.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Phase Gear static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/phase-gear/README.md"
+    },
+    {
+      "id": "item-route-painter",
+      "source": "art-source/blender/items/route-painter/route-painter.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Route Painter static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/route-painter/README.md"
+    },
+    {
+      "id": "item-swap-beacon",
+      "source": "art-source/blender/items/swap-beacon/swap-beacon.blend",
+      "author": "Dario Kart project",
+      "origin": "Original Blender geometry modeled from the user-supplied item concept sheet",
+      "reference": "art-source/concepts/items/item-concepts.png",
+      "builder": "tools/blender/build_items.py",
+      "validation": "tools/blender/verify_items.py",
+      "purpose": "Swap Beacon static item model and exchange art; Unity integration pending",
+      "review": "art-source/blender/items/swap-beacon/README.md"
     }
   ]
 }

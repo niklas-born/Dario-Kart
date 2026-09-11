@@ -9,18 +9,23 @@
     [
       -0.5270950794219971,
       -0.13705448806285858,
-      0.23588822782039642
+      -0.5241117477416992
     ],
     [
       0.5191714763641357,
       0.1278700828552246,
-      1.2793145179748535
+      0.5193145275115967
     ]
   ],
   "units": "meters",
   "sourceForward": "-Y",
   "sourceUp": "Z",
   "exchangeUp": "Y",
+  "exportPivotSourceMeters": [
+    0.0,
+    0.0,
+    0.7599999904632568
+  ],
   "materials": {
     "Gear | spectral band 0": {
       "Base Color": [
@@ -276,8 +281,9 @@
     }
   },
   "sha256": {
-    "phase-gear.fbx": "a5a52f742eb0f7db72e4f31a9606caf8dd3e9e56169b7fd21d9d781ddd4e6e0f",
-    "phase-gear.glb": "060f259a54034d38dfcbb7024df5e07fae8412f753821cf7f84bb68a37cde973"
+    "phase-gear.blend": "882ea6b3ebee8fbf2b9e125589c924990c773fc7dea39f696a07d97c4e6b669f",
+    "phase-gear.fbx": "0e15a9901526890577d26c6e6ff8f15fe277a1dc884ad76490f5766c53c243dd",
+    "phase-gear.glb": "eff892f3233e11a5f3137c3a074e461901fefb1abd4d90a2dbcefa6ee0bb1b10"
   },
   "notes": "Original modeled geometry from supplied concept. FX_ meshes are optional decorative effects. FBX needs explicit URP materials using these linear values. No gameplay implementation or engine appearance validation."
 }
